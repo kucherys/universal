@@ -1,25 +1,30 @@
 package tests.ios;
 
 import baseClasses.BaseClass;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
+import pages.LaunchPage;
+import pages.ProductCarouselPage;
 
 public class AppiumiOSTest extends BaseClass {
 
+    LaunchPage launchPage;
+    ProductCarouselPage productCarouselPage;
+
     @Test
-    public void iosEmulator() throws IOException, InterruptedException{
-        IOSDriver<IOSElement> driver = capabilities("Digibank.app");
-        System.out.println("Test started");
-//        String actualText = driver.findElementByXPath("//*[contains(@name,'message')]").getText();
-//        System.out.println(actualText);
-//        driver.findElementByAccessibilityId("I'm new to [ARBM Digibank]").click();
-//        driver.findElementByXPath("XCUIElementTypeStaticText[@name='Text Entry']").click();
-//        driver.findElementByXPath("//XCUIElementTypeCell").sendKeys("hello");
-//        driver.findElementByAccessibilityId("OK").click();
-        System.out.println("Test finished");
+    public void verify_launching_page_labels() {
+        launchPage = new LaunchPage(driver);
+        launchPage.verifyLogInButton("Log In");
+//        launchPage.verifyWelcomeLabel("Welcome to ARBM Digibank");
+        launchPage.verifySignUpButton("I'm new to [ARBM Digibank]");
+    }
+
+    @Test
+    public void verify_product_carousel_page_labels() {
+        launchPage = new LaunchPage(driver);
+        launchPage.logInToProductCarouselPage();
+        productCarouselPage = new ProductCarouselPage(driver);
+//        productCarouselPage.verifyOpenBankAccountButton("Open Bank Account");
+        productCarouselPage.verifyEligibilityLabel("Am I eligible?");
     }
 
 }

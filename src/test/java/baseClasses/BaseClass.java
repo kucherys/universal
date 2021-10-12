@@ -2,26 +2,22 @@ package baseClasses;
 
 import capabilities.Capabilities;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.AutomationName;
-import io.appium.java_client.remote.IOSMobileCapabilityType;
-import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import io.appium.java_client.ios.IOSElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
 public class BaseClass extends Capabilities {
 
+        public static IOSDriver<IOSElement> driver;
+
         @BeforeClass
-        public void setupClassGlobal(){
+        public void setupClassGlobal() throws IOException, InterruptedException {
                 System.out.println("Global class setup");
                 service = startServer();
+                driver = capabilities("Digibank.app");
         }
 
         @AfterClass
@@ -29,7 +25,6 @@ public class BaseClass extends Capabilities {
                 System.out.println("Global class clean up");
                 service.stop();
         }
-
 
         @BeforeMethod
         public void setupGlobal(){
