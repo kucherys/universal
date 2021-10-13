@@ -10,8 +10,10 @@ public class LaunchPage {
     IOSDriver<IOSElement> driver;
 
     By logInButton = By.id("button.logIn");
-    By signUpButton = By.id("button.signUp");
-    By welcomeLabel = By.id("label.welcome");
+    By signInButton = By.id("button.signIn");
+    String welcomeLabel = "label.welcome";
+
+    ProductCarouselPage productCarouselPage;
 
     public LaunchPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
@@ -23,17 +25,18 @@ public class LaunchPage {
     }
 
     public void verifySignUpButton(String expectedName){
-        String actualName = driver.findElement(signUpButton).getText();
+        String actualName = driver.findElement(signInButton).getText();
         Assert.assertEquals(expectedName, actualName);
     }
 
     public void verifyWelcomeLabel(String expectedName){
-        String actualName = driver.findElement(welcomeLabel).getText();
-//        String actualName = driver.findElementByAccessibilityId("Welcome to ARBM Digibank").getText();
+        String actualName = driver.findElementByAccessibilityId(welcomeLabel).getText().replace("\n", " ");
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public void logInToProductCarouselPage(){
-        driver.findElement(signUpButton).click();
+    public ProductCarouselPage logInToProductCarouselPage(){
+        driver.findElement(signInButton).click();
+        productCarouselPage = new ProductCarouselPage(driver);
+        return productCarouselPage;
     }
 }

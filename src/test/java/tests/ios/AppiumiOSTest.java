@@ -14,17 +14,18 @@ public class AppiumiOSTest extends BaseClass {
     public void verify_launching_page_labels() {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogInButton("Log In");
-//        launchPage.verifyWelcomeLabel("Welcome to ARBM Digibank");
+        launchPage.verifyWelcomeLabel("Welcome to ARBM Digibank");
         launchPage.verifySignUpButton("I'm new to [ARBM Digibank]");
     }
 
     @Test
     public void verify_product_carousel_page_labels() {
         launchPage = new LaunchPage(driver);
-        launchPage.logInToProductCarouselPage();
-        productCarouselPage = new ProductCarouselPage(driver);
-//        productCarouselPage.verifyOpenBankAccountButton("Open Bank Account");
-        productCarouselPage.verifyEligibilityLabel("Am I eligible?");
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        prodCarPage.verifyInstructionText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus");
+        prodCarPage.verifyLogoLabel("DigiBank");
+        prodCarPage.verifyOpenBankAccountButton("Open Bank Account");
+        prodCarPage.verifyEligibilityLabel("Am I eligible?");
     }
 
 }

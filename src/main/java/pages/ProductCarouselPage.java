@@ -9,8 +9,9 @@ public class ProductCarouselPage {
     IOSDriver<IOSElement> driver;
 
     By openBankAccountButton = By.id("button.openBankAccount");
-    By eligibleLabel = By.id("button.eligibilityCriteria");
-
+    By eligibleButton = By.id("button.eligibilityCriteria");
+    By logoLabel = By.id("label.logo");
+    By instructionText = By.id("label.carousel.0");
 
     public ProductCarouselPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
@@ -22,7 +23,17 @@ public class ProductCarouselPage {
     }
 
     public void verifyEligibilityLabel(String expectedName){
-        String actualName = driver.findElement(eligibleLabel).getText();
+        String actualName = driver.findElement(eligibleButton).getText();
+        Assert.assertEquals(expectedName, actualName);
+    }
+
+    public void verifyLogoLabel(String expectedName){
+        String actualName = driver.findElement(logoLabel).getText();
+        Assert.assertEquals(expectedName, actualName);
+    }
+
+    public void verifyInstructionText(String expectedName){
+        String actualName = driver.findElement(instructionText).getText();
         Assert.assertEquals(expectedName, actualName);
     }
 
