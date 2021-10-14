@@ -8,6 +8,8 @@ import org.testng.Assert;
 public class ProductCarouselPage {
     IOSDriver<IOSElement> driver;
 
+    EligibilityPage eligibilityPage;
+
     By openBankAccountButton = By.id("button.openBankAccount");
     By eligibleButton = By.id("button.eligibilityCriteria");
     By logoLabel = By.id("label.logo");
@@ -35,6 +37,12 @@ public class ProductCarouselPage {
     public void verifyInstructionText(String expectedName){
         String actualName = driver.findElement(instructionText).getText();
         Assert.assertEquals(expectedName, actualName);
+    }
+
+    public EligibilityPage openEligibilityModal(){
+        driver.findElementByAccessibilityId("button.eligibilityCriteria").click();
+        eligibilityPage = new EligibilityPage(driver);
+        return eligibilityPage;
     }
 
 }
