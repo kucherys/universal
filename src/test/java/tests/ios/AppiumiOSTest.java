@@ -19,7 +19,7 @@ public class AppiumiOSTest extends BaseClass {
     ProductCarouselPage productCarouselPage;
 
     @Test
-    public void verify_launching_page_labels() {
+    public void verify_launching_page() {
         launchPage = new LaunchPage(driver);
         launchPage.verifyLogInButton("Log In");
         launchPage.verifyWelcomeLabel("Welcome to ARBM Digibank");
@@ -27,13 +27,16 @@ public class AppiumiOSTest extends BaseClass {
     }
 
     @Test
-    public void verify_product_carousel_page_labels() {
+    public void verify_product_carousel_page() {
         launchPage = new LaunchPage(driver);
         ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
         prodCarPage.verifyInstructionText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus");
         prodCarPage.verifyLogoLabel("DigiBank");
         prodCarPage.verifyOpenBankAccountButton("Open Bank Account");
         prodCarPage.verifyEligibilityLabel("Am I eligible?");
+        for(int i = 0; i<3; i++) {
+            driver.findElementByAccessibilityId("pageControl").click();
+        }
     }
 
     @Test
