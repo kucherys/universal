@@ -9,11 +9,14 @@ public class ProductCarouselPage {
     IOSDriver<IOSElement> driver;
 
     EligibilityPage eligibilityPage;
+    AppFlowPage appFlowPage;
+    LaunchPage launchPage;
 
     By openBankAccountButton = By.id("button.openBankAccount");
     By eligibleButton = By.id("button.eligibilityCriteria");
     By logoLabel = By.id("label.logo");
     By instructionText = By.id("label.carousel.0");
+    String buttonBack = "Back";
 
     public ProductCarouselPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
@@ -43,6 +46,18 @@ public class ProductCarouselPage {
         driver.findElementByAccessibilityId("button.eligibilityCriteria").click();
         eligibilityPage = new EligibilityPage(driver);
         return eligibilityPage;
+    }
+
+    public LaunchPage backToPreviousPage (){
+        driver.findElementByClassName(buttonBack).click();
+        launchPage = new LaunchPage(driver);
+        return launchPage;
+    }
+
+    public AppFlowPage getAppFlowPage(){
+        driver.findElement(openBankAccountButton).click();
+        appFlowPage = new AppFlowPage(driver);
+        return appFlowPage;
     }
 
 }

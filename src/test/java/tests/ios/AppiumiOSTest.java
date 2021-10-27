@@ -1,9 +1,8 @@
 package tests.ios;
 
 import baseClasses.BaseClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pages.AppFlowPage;
 import pages.EligibilityPage;
 import pages.LaunchPage;
 import pages.ProductCarouselPage;
@@ -17,6 +16,7 @@ public class AppiumiOSTest extends BaseClass {
     LaunchPage launchPage;
     EligibilityPage eligibilityPage;
     ProductCarouselPage productCarouselPage;
+    AppFlowPage appFlowPage;
 
     @Test
     public void verify_launching_page() {
@@ -31,6 +31,10 @@ public class AppiumiOSTest extends BaseClass {
         launchPage = new LaunchPage(driver);
         ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
         prodCarPage.verifyInstructionText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus");
+
+//        prodCarPage.backToPreviousPage()
+//                        .logInToProductCarouselPage();
+
         prodCarPage.verifyLogoLabel("DigiBank");
         prodCarPage.verifyOpenBankAccountButton("Open Bank Account");
         prodCarPage.verifyEligibilityLabel("Am I eligible?");
@@ -55,5 +59,32 @@ public class AppiumiOSTest extends BaseClass {
                 "I am applying for an individual account");
         eligibilityPage.verifyEligibilityList(list);
         eligibilityPage.closeEligibilityModal();
+
+        for(int i = 0; i<3; i++) {
+            driver.findElementByAccessibilityId("pageControl").click();
+        }
+
+        eligibilityPage = prodCarPage.openEligibilityModal();
+        eligibilityPage.verifyCloseButton();
+        eligibilityPage.verifyEligibilityLabelName("Eligibility criteria");
+        eligibilityPage.verifyEligibilityList(list);
+        eligibilityPage.closeEligibilityModal();
+
+    }
+
+    @Test
+    public void verify_app_flow_page() {   // defect ARBP-1333
+        launchPage = new LaunchPage(driver);
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        AppFlowPage appFlowPage = prodCarPage.getAppFlowPage();
+        appFlowPage.verifyTitleLabel("This shouldn't take long at all");
+//        appFlowPage.verifyFirstTextLabel("Our 4 stage sign up process is quick and easy to complete");
+//        appFlowPage.verifySecondTextLabel("Have your MyKad ready and let's get started");
+        appFlowPage.verifyFirstTextLabel("We pride ourselves on a quick sign up.");
+        appFlowPage.verifySecondTextLabel("Please ensure you have your MyKad with you before starting the process.");
+        appFlowPage.verifyProgressBarLabels("Sign up & ID verification","Personal details",
+                "Create an account", "Top up account");
+//        appFlowPage.verifySignUpButton("Let's start");
+        appFlowPage.verifySignUpButton("Let's sign up");
     }
 }
