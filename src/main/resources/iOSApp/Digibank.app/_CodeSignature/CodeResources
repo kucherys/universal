@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AdHoc.xcconfig</key>
+		<data>
+		Qk4yKGpc2CY2Dr1QQieyJzKZChk=
+		</data>
 		<key>Assets.car</key>
 		<data>
-		nAac/+IIik4hU+YRb2KZsF9SxsU=
+		pLcUeQuSpNuY9CPsIw2jqCaCSqg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -19,6 +23,10 @@
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
 		U0x8EM0781fCPb62BbZIXKeDlZ4=
+		</data>
+		<key>Debug.xcconfig</key>
+		<data>
+		Ti6jpmFyigrvDcXblNJiVyimNXU=
 		</data>
 		<key>Frameworks/DesignSystem.framework/CircularStd-Black.otf</key>
 		<data>
@@ -54,69 +62,45 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/DesignSystem</key>
 		<data>
-		IXOG8KvXvI4C8WmCdQkoJUcnYSc=
-		</data>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
-		<data>
-		VXZT3+6XwJU4ClOEvYiCjwnEFIA=
-		</data>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<data>
-		IMtpmewJnhmU/Ui5ezLNLKPVnrw=
-		</data>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<data>
-		4TqeUmNY4FI0RftYBewq2rTnnsg=
+		HcGfvfp+oBws3x2hCKSlCeOEl3c=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<data>
-		H9oLRY490MMKxDKSc0PmctGdtCs=
+		O6xTToTN3ncZk9hMQa3IdxV9CwQ=
 		</data>
 		<key>Frameworks/DesignSystem.framework/_CodeSignature/CodeResources</key>
 		<data>
-		tcNYRnCUP0AgQDHR3qxOg0D4ugc=
-		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
-		<data>
-		VXZT3+6XwJU4ClOEvYiCjwnEFIA=
-		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<data>
-		IMtpmewJnhmU/Ui5ezLNLKPVnrw=
-		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<data>
-		4TqeUmNY4FI0RftYBewq2rTnnsg=
+		iVeMxZ0UmEyJY5PA8ESfyTnjHEU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FuniPgB/576vuU/QwzyKobNNSMY=
+		VegeYZLZiOcnoBq2HAinbITs22A=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/Info.plist</key>
+		<key>PhoneNumberKitResources.bundle/Info.plist</key>
 		<data>
-		vsz7MElziTE3xMdEhIFE5Ke2UNY=
+		GX4GyvwW+t6POJw7YFgD5XueBzI=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/PhoneNumberMetadata.json</key>
+		<key>PhoneNumberKitResources.bundle/PhoneNumberMetadata.json</key>
 		<data>
 		vzvH14ZE2jPw2sXdrDnElEerc6w=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeDirectory</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		LALxOpbB+Pg5mau81uCdh9QEaVc=
+		TKABqgLV0dsqTsQBMGphPVEIwZ8=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeRequirements</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeRequirements-1</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		Gah032VxPSSZkHvqhWc1YX7KwZE=
+		XJZBP4hjs6u9ZEww6G8UAb5kbW8=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeResources</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
 		6TBj83WpFmu7YpAFwmLSFbZlfS8=
 		</data>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeSignature</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeSignature</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
@@ -124,11 +108,15 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Release.xcconfig</key>
+		<data>
+		J8iZneUnG/aNqahnOH+t7TVZIMY=
+		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cIoQpJZZnCD4uNfRFaCNIhMzKyw=
+			oVoyKkXB0BVv2LXyNDkOXk+Nnzs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -136,11 +124,18 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AdHoc.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kuIhy1rEHdG1zC/J4HwnolHCXaNtO9W+YXL+T2MvM3k=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4FKHWAwTrj3byBlyzVhBuB52ptmizuAxxEIoBkKaMnQ=
+			InykPTIqIgQhoz8x+TySupQNiwo1MYIfpJDZwPOwVdk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -162,6 +157,13 @@
 			<key>hash2</key>
 			<data>
 			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
+			</data>
+		</dict>
+		<key>Debug.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Md2P96kfG2DHgqdfiGzCyqLGiig3HLUI12o4WKL53Qs=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/CircularStd-Black.otf</key>
@@ -224,119 +226,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fnBmtc4rq8ipohyJkNpLFuwQgcnLZTWLRrLo/3OVs+s=
-			</data>
-		</dict>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			12bofMvOoyShwtEemLX6KzIk8nPxsY5wM4/Ish9sRKQ=
-			</data>
-		</dict>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3lEj9JJi/nnoj4ggs5169mw5sJcV7gML4lRuEHMb41Q=
-			</data>
-		</dict>
-		<key>Frameworks/DesignSystem.framework/Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8v9kPLM/dtKCsRiQjbOcm1s6c3EwZXbSpqNSB8nb4kw=
+			TzPc409tnJ5HJweL7sE0s8iHsMdXmSqgQnyC8JyNNak=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NdfbNvr/FNDl1IZNqBePtnYrd2naTC6txvy4DObhtOQ=
+			FCHsXS6VBDZRh2GrT37aqvPA24F65dx5Lmoohhghl4s=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCC46AASlR5ielnM/cjn/U/TGuUiKdwaRL9Dzfe7gaE=
+			pEuDhRvxAy946HX7vpDMqpxMX6ULBl/X/LtT6jutTeI=
 			</data>
 		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
+		<key>PhoneNumberKitResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			12bofMvOoyShwtEemLX6KzIk8nPxsY5wM4/Ish9sRKQ=
+			m0TzxEZ113wyVYLYpxjMc6KwPxljVuiA3ADxauxBRTY=
 			</data>
 		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3lEj9JJi/nnoj4ggs5169mw5sJcV7gML4lRuEHMb41Q=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8v9kPLM/dtKCsRiQjbOcm1s6c3EwZXbSpqNSB8nb4kw=
-			</data>
-		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mszWnHwd/OnOoqea1pJ4nGDjAlIo70FGvnH7VyUxeUc=
-			</data>
-		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/PhoneNumberMetadata.json</key>
+		<key>PhoneNumberKitResources.bundle/PhoneNumberMetadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			1gDd+JroWW6cC3tavH/yZIPAZnHHh3TpJch0FhQcFIs=
 			</data>
 		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeDirectory</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Vh2yLWgBXAzv8ArvmmfyTid47ztXLx6C7NWyE/ITSo=
+			/oyEcg4tMNHgbcs96lapjbwMrIaNHYF7JmK30Vgxqgs=
 			</data>
 		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeRequirements</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeRequirements-1</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IMBQwUyduJ+ud2/1vrkrtEhmjLw9P0JBRTdGeXVdh7A=
+			+iswMCAagEBVdzmxCSUkzOA47y/1FjFXeURbt052wko=
 			</data>
 		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeResources</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			TUpA3wTy4MnxVzYtpU6H0uOB2R4q/VCsm0WApYQxdpU=
 			</data>
 		</dict>
-		<key>PhoneNumberKit_PhoneNumberKit.bundle/_CodeSignature/CodeSignature</key>
+		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeSignature</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
+		<key>Release.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CkGIhyY85HcW2onb9VkJGHpHEi9r0G5OctophSN9P2U=
+			</data>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D8CeHkSlYGdh2ZR2t08SLLL1ZXlwBew8ZgyeYXxkdK8=
+			MxFiE9Kg75Z1V22ene5J//liFamIYSsfflvxrBC6fSk=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -2,10 +2,7 @@ package tests.ios;
 
 import baseClasses.BaseClass;
 import org.testng.annotations.Test;
-import pages.AppFlowPage;
-import pages.EligibilityPage;
-import pages.LaunchPage;
-import pages.ProductCarouselPage;
+import pages.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,9 +11,11 @@ import java.util.List;
 public class AppiumiOSTest extends BaseClass {
 
     LaunchPage launchPage;
-    EligibilityPage eligibilityPage;
+    EligibilityModalPage eligibilityModalPage;
     ProductCarouselPage productCarouselPage;
     AppFlowPage appFlowPage;
+    TermsConditionsPage termsConditionsPage;
+    PhoneCapturePage phoneCapturePage;
 
     @Test
     public void verify_launching_page() {
@@ -31,10 +30,6 @@ public class AppiumiOSTest extends BaseClass {
         launchPage = new LaunchPage(driver);
         ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
         prodCarPage.verifyInstructionText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus");
-
-//        prodCarPage.backToPreviousPage()
-//                        .logInToProductCarouselPage();
-
         prodCarPage.verifyLogoLabel("DigiBank");
         prodCarPage.verifyOpenBankAccountButton("Open Bank Account");
         prodCarPage.verifyEligibilityLabel("Am I eligible?");
@@ -47,9 +42,9 @@ public class AppiumiOSTest extends BaseClass {
     public void verify_product_eligibility_modal() {
         launchPage = new LaunchPage(driver);
         ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
-        eligibilityPage = prodCarPage.openEligibilityModal();
-        eligibilityPage.verifyCloseButton();
-        eligibilityPage.verifyEligibilityLabelName("Eligibility criteria");
+        eligibilityModalPage = prodCarPage.openEligibilityModal();
+        eligibilityModalPage.verifyCloseButton();
+        eligibilityModalPage.verifyEligibilityLabelName("Eligibility criteria");
         List<String> list = new ArrayList<>();
         Collections.addAll(list, "I am a Malaysian with a MyKad, residing in Malaysia",
                 "I am aged 18 and above",
@@ -57,18 +52,18 @@ public class AppiumiOSTest extends BaseClass {
                 "I am NOT a US person",
                 "I am NOT a tax resident in any other country",
                 "I am applying for an individual account");
-        eligibilityPage.verifyEligibilityList(list);
-        eligibilityPage.closeEligibilityModal();
+        eligibilityModalPage.verifyEligibilityList(list);
+        eligibilityModalPage.closeEligibilityModal();
 
         for(int i = 0; i<3; i++) {
             driver.findElementByAccessibilityId("pageControl").click();
         }
 
-        eligibilityPage = prodCarPage.openEligibilityModal();
-        eligibilityPage.verifyCloseButton();
-        eligibilityPage.verifyEligibilityLabelName("Eligibility criteria");
-        eligibilityPage.verifyEligibilityList(list);
-        eligibilityPage.closeEligibilityModal();
+        eligibilityModalPage = prodCarPage.openEligibilityModal();
+        eligibilityModalPage.verifyCloseButton();
+        eligibilityModalPage.verifyEligibilityLabelName("Eligibility criteria");
+        eligibilityModalPage.verifyEligibilityList(list);
+        eligibilityModalPage.closeEligibilityModal();
 
     }
 
@@ -86,5 +81,65 @@ public class AppiumiOSTest extends BaseClass {
                 "Create an account", "Top up account");
 //        appFlowPage.verifySignUpButton("Let's start");
         appFlowPage.verifySignUpButton("Let's sign up");
+    }
+
+    @Test
+    public void verify_terms_conditions_page() {
+        launchPage = new LaunchPage(driver);
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        AppFlowPage appFlowPage = prodCarPage.getAppFlowPage();
+        TermsConditionsPage termsConditionsPage = appFlowPage.getTermsConditionsPage();
+        termsConditionsPage.verifyTitleLabel("Welcome to a new way of banking");
+        termsConditionsPage.verifyBodyTextLabel("We're committed to protecting the data you share with us. Please contact our customer care team with any queries.");
+        termsConditionsPage.verifySignUpButton("Confirm");
+        EligibilityConfirmPage eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage();
+
+    }
+
+    @Test
+    public void verify_eligbility_page() {
+        launchPage = new LaunchPage(driver);
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        AppFlowPage appFlowPage = prodCarPage.getAppFlowPage();
+        TermsConditionsPage termsConditionsPage = appFlowPage.getTermsConditionsPage();
+        EligibilityConfirmPage eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage();
+        eligibilityConfirmPage.verifyTitleLabel("I'm eligible because...");
+        eligibilityConfirmPage.verifyTipText("Tip: You are a US person if you are either a US citizen, a US resident or a Green Card holder.");
+        eligibilityConfirmPage.verifyConfirmEligibleButton("I confirm I am eligible");
+        eligibilityConfirmPage.verifyConfirmNotEligibleButton("I am not eligible");
+
+    }
+
+    @Test
+    public void verify_capture_name_page() throws InterruptedException {
+        launchPage = new LaunchPage(driver);
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        AppFlowPage appFlowPage = prodCarPage.getAppFlowPage();
+        TermsConditionsPage termsConditionsPage = appFlowPage.getTermsConditionsPage();
+        EligibilityConfirmPage eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage();
+        NameCapturePage captureNamePage = eligibilityConfirmPage.getCaptureNamePage();
+        captureNamePage.verifyBodyTextLabel("This name is just a friendly way for us to address you. " +
+                "We won't show it on your DigiBank card or anything official.");
+        captureNamePage.verifyTitleLabel("What should we call you?");
+        captureNamePage.verifyNextButton("Next");
+        captureNamePage.fillNameTextField("User");
+
+    }
+
+    @Test
+    public void verify_capture_phone_page() throws InterruptedException {
+        launchPage = new LaunchPage(driver);
+        ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage();
+        AppFlowPage appFlowPage = prodCarPage.getAppFlowPage();
+        TermsConditionsPage termsConditionsPage = appFlowPage.getTermsConditionsPage();
+        EligibilityConfirmPage eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage();
+        NameCapturePage captureNamePage = eligibilityConfirmPage.getCaptureNamePage();
+        captureNamePage.fillNameTextField("User");
+        PhoneCapturePage phoneCapturePage = captureNamePage.getPhoneCapturePage();
+        phoneCapturePage.verifyConfirmButton("Confirm");
+        phoneCapturePage.verifyTitleLabel("What is your mobile number?");
+        phoneCapturePage.fillPhoneNumberField("1123456789");
+        phoneCapturePage.verifyConfirmButtonStatus(true);
+
     }
 }

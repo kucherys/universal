@@ -36,21 +36,9 @@
 		<data>
 		/c6UbxZJwEY4iAZRPE7tHEWFLaI=
 		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
-		<data>
-		VXZT3+6XwJU4ClOEvYiCjwnEFIA=
-		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<data>
-		IMtpmewJnhmU/Ui5ezLNLKPVnrw=
-		</data>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<data>
-		4TqeUmNY4FI0RftYBewq2rTnnsg=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		H9oLRY490MMKxDKSc0PmctGdtCs=
+		O6xTToTN3ncZk9hMQa3IdxV9CwQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -109,27 +97,6 @@
 			<key>hash2</key>
 			<data>
 			bForReiUEW6wqyDHKNVZ+rNU9aTB6veS6cpeoe81c50=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			12bofMvOoyShwtEemLX6KzIk8nPxsY5wM4/Ish9sRKQ=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/SwiftyMarkdown_737078D08FA777D7_PackageProduct</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3lEj9JJi/nnoj4ggs5169mw5sJcV7gML4lRuEHMb41Q=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftyMarkdown_737078D08FA777D7_PackageProduct.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8v9kPLM/dtKCsRiQjbOcm1s6c3EwZXbSpqNSB8nb4kw=
 			</data>
 		</dict>
 	</dict>

@@ -10,7 +10,7 @@
 
         <packages>
             <package name="tests.ios.*"/>
-            <package name="tests.sanity.*"/>
+<!--            <package name="tests.sanity.*"/>-->
         </packages>
     </test>
 

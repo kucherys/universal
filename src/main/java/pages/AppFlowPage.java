@@ -20,6 +20,7 @@ public class AppFlowPage {
     By progressSignUpText = By.id("progress.signUpText");
 
     ProductCarouselPage productCarouselPage;
+    TermsConditionsPage termsConditionsPage;
 
     public AppFlowPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
@@ -69,5 +70,10 @@ public class AppFlowPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
+    public TermsConditionsPage getTermsConditionsPage(){
+        driver.findElement(signUpButton).click();
+        termsConditionsPage = new TermsConditionsPage(driver);
+        return termsConditionsPage;
+    }
 
     }

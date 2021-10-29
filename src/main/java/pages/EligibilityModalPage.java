@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class EligibilityPage {
+public class EligibilityModalPage {
 
     IOSDriver<IOSElement> driver;
     ProductCarouselPage productCarouselPage;
@@ -19,7 +19,7 @@ public class EligibilityPage {
     By closeButton = By.id("button.close");
     By eligibilityLabel = By.id("label.title");
 
-    public EligibilityPage(IOSDriver<IOSElement> driver){
+    public EligibilityModalPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
     }
 

@@ -8,7 +8,7 @@ import org.testng.Assert;
 public class ProductCarouselPage {
     IOSDriver<IOSElement> driver;
 
-    EligibilityPage eligibilityPage;
+    EligibilityModalPage eligibilityModalPage;
     AppFlowPage appFlowPage;
     LaunchPage launchPage;
 
@@ -42,10 +42,10 @@ public class ProductCarouselPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public EligibilityPage openEligibilityModal(){
+    public EligibilityModalPage openEligibilityModal(){
         driver.findElementByAccessibilityId("button.eligibilityCriteria").click();
-        eligibilityPage = new EligibilityPage(driver);
-        return eligibilityPage;
+        eligibilityModalPage = new EligibilityModalPage(driver);
+        return eligibilityModalPage;
     }
 
     public LaunchPage backToPreviousPage (){
