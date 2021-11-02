@@ -26,9 +26,11 @@ public class PhoneCapturePage {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public void fillPhoneNumberField(String number){
+    public void fillPhoneNumberField(String number, boolean expectedStatus){
+        driver.findElement(phoneNumberField).clear();
         driver.findElement(phoneNumberField).click();
         driver.findElement(phoneNumberField).sendKeys(number);
+        verifyConfirmButtonStatus(expectedStatus);
     }
 
     public void verifyConfirmButtonStatus(boolean expectedStatus){

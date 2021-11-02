@@ -136,10 +136,10 @@ public class AppiumiOSTest extends BaseClass {
         NameCapturePage captureNamePage = eligibilityConfirmPage.getCaptureNamePage();
         captureNamePage.fillNameTextField("User");
         PhoneCapturePage phoneCapturePage = captureNamePage.getPhoneCapturePage();
+        phoneCapturePage.fillPhoneNumberField("1123456789", true);
+        phoneCapturePage.fillPhoneNumberField("1223456789", false);
+        phoneCapturePage.fillPhoneNumberField("122345678", true);
         phoneCapturePage.verifyConfirmButton("Confirm");
         phoneCapturePage.verifyTitleLabel("What is your mobile number?");
-        phoneCapturePage.fillPhoneNumberField("1123456789");
-        phoneCapturePage.verifyConfirmButtonStatus(true);
-
     }
 }
