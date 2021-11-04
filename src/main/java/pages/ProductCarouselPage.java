@@ -1,12 +1,12 @@
 package pages;
 
+import capabilities.BaseClassPage;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class ProductCarouselPage {
-    IOSDriver<IOSElement> driver;
+public class ProductCarouselPage extends BaseClassPage {
 
     EligibilityModalPage eligibilityModalPage;
     AppFlowPage appFlowPage;
@@ -42,10 +42,9 @@ public class ProductCarouselPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public EligibilityModalPage openEligibilityModal(){
+    public EligibilityModalPage openEligibilityModal(IOSDriver<IOSElement> driver){
         driver.findElementByAccessibilityId("button.eligibilityCriteria").click();
-        eligibilityModalPage = new EligibilityModalPage(driver);
-        return eligibilityModalPage;
+        return new EligibilityModalPage(driver);
     }
 
     public LaunchPage backToPreviousPage (){
@@ -54,10 +53,9 @@ public class ProductCarouselPage {
         return launchPage;
     }
 
-    public AppFlowPage getAppFlowPage(){
+    public AppFlowPage getAppFlowPage(IOSDriver<IOSElement> driver){
         driver.findElement(openBankAccountButton).click();
-        appFlowPage = new AppFlowPage(driver);
-        return appFlowPage;
+        return new AppFlowPage(driver);
     }
 
 }

@@ -1,13 +1,12 @@
 package pages;
 
+import capabilities.BaseClassPage;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class NameCapturePage {
-
-    IOSDriver<IOSElement> driver;
+public class NameCapturePage extends BaseClassPage {
 
     By title = By.id("label.title");
     By bodyTextLabel = By.id("label.description");
@@ -40,10 +39,9 @@ public class NameCapturePage {
         driver.findElement(nameTextField).sendKeys(text);
     }
 
-    public PhoneCapturePage getPhoneCapturePage (){
+    public PhoneCapturePage getPhoneCapturePage (IOSDriver<IOSElement> driver){
         driver.findElement(nextButton).click();
-        phoneCapturePage = new PhoneCapturePage(driver);
-        return phoneCapturePage;
+        return new PhoneCapturePage(driver);
     }
 
 }

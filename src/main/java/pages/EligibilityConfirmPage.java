@@ -1,5 +1,6 @@
 package pages;
 
+import capabilities.BaseClassPage;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
@@ -7,9 +8,9 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class EligibilityConfirmPage {
+public class EligibilityConfirmPage extends BaseClassPage {
 
-    IOSDriver<IOSElement> driver;
+
     NameCapturePage captureNamePage;
 
     By titleLabel = By.id("label.title");
@@ -47,13 +48,12 @@ public class EligibilityConfirmPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public NameCapturePage getCaptureNamePage () throws InterruptedException {
+    public NameCapturePage getCaptureNamePage (   IOSDriver<IOSElement> driver) throws InterruptedException {
         driver.findElement(checkboxNationality).click();
         driver.findElement(checkboxUsCitizen).click();
         driver.findElement(checkboxTaxRes).click();
         driver.findElement(eligibleButton).click();
         TimeUnit.SECONDS.sleep(1);
-        captureNamePage = new NameCapturePage(driver);
-        return captureNamePage;
+        return new NameCapturePage(driver);
     }
 }

@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify elements on product carousel page",
+        "description": "",
+        "id": "verify-product-carousel-page-functionality;verify-elements-on-product-carousel-page",
+        "after": [
+          {
+            "result": {
+              "duration": 39260753,
+              "status": "passed"
+            },
+            "match": {
+              "location": "IosLandingSteps.stopAppiumServer()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10909326393,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Appium server and simulator with application started",
+            "match": {
+              "location": "IosLandingSteps.appiumServerAndApplicationRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149725059,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify landing page is loaded",
+            "match": {
+              "location": "IosLandingSteps.getLandingPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191358810,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I log in to product carousel page",
+            "match": {
+              "location": "IosProductCarouselSteps.getProductCarouselPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1509517986,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify elements on product carousel page",
+            "match": {
+              "location": "IosProductCarouselSteps.verifyElementsLandingPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@ios"
+          }
+        ]
+      }
+    ],
+    "name": "Verify product carousel page functionality",
+    "description": "",
+    "id": "verify-product-carousel-page-functionality",
+    "keyword": "Feature",
+    "uri": "ProductCarouselPage.feature"
+  }
+]

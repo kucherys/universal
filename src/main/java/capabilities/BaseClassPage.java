@@ -1,6 +1,8 @@
-package baseClasses;
+package capabilities;
 
 import capabilities.Capabilities;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.testng.annotations.AfterClass;
@@ -9,13 +11,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
-public class BaseClass extends Capabilities {
+public class BaseClassPage extends Capabilities {
 
         public static IOSDriver<IOSElement> driver;
 
         @BeforeClass
         public void setupClassGlobal() throws IOException, InterruptedException {
-                System.out.println("Global class setup");
                 service = startServer();
                 driver = capabilities("Digibank.app");
         }
@@ -35,5 +36,8 @@ public class BaseClass extends Capabilities {
         public void cleanUpGlobal(){
                 System.out.println("Global method clean up");
         }
+
+
+
 
 }

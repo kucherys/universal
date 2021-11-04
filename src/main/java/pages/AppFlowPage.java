@@ -1,12 +1,12 @@
 package pages;
 
+import capabilities.BaseClassPage;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class AppFlowPage {
-    IOSDriver<IOSElement> driver;
+public class AppFlowPage extends BaseClassPage {
 
     By backArrow = By.id("button.back");
     By titleLabel = By.id("label.title");
@@ -70,10 +70,9 @@ public class AppFlowPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public TermsConditionsPage getTermsConditionsPage(){
+    public TermsConditionsPage getTermsConditionsPage(IOSDriver<IOSElement> driver){
         driver.findElement(signUpButton).click();
-        termsConditionsPage = new TermsConditionsPage(driver);
-        return termsConditionsPage;
+        return new TermsConditionsPage(driver);
     }
 
     }
