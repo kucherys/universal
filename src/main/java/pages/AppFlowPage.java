@@ -20,10 +20,13 @@ public class AppFlowPage extends BaseClassPage {
     By progressSignUpText = By.id("progress.signUpText");
 
     ProductCarouselPage productCarouselPage;
-    TermsConditionsPage termsConditionsPage;
 
     public AppFlowPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
+    }
+
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        return driver.findElement(titleLabel).isDisplayed();
     }
 
     public ProductCarouselPage verifyBackArrowButton(){

@@ -4,6 +4,7 @@ import capabilities.BaseClassPage;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.testng.Assert;
 import pages.LaunchPage;
 import pages.ProductCarouselPage;
 
@@ -13,10 +14,14 @@ import java.util.Map;
 
 public class IosProductCarouselSteps extends BaseClassPage {
 
-//    public static IOSDriver<IOSElement> driver;
-
     LaunchPage launchPage;
     ProductCarouselPage prodCarPage;
+
+    @When("I verify product carousel page is loaded")
+    public void verfyProdCarouselPageLoaded() {
+        prodCarPage = new ProductCarouselPage(driver);
+        Assert.assertTrue(prodCarPage.isLoaded(driver));
+    }
 
     @When("I log in to product carousel page")
     public void getProductCarouselPage()  {

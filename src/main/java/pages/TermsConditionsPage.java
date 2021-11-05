@@ -19,6 +19,10 @@ public class TermsConditionsPage extends BaseClassPage {
         this.driver = driver;
     }
 
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        return driver.findElement(bodyText).isDisplayed();
+    }
+
     public void verifyTitleLabel(String expectedName){
         String actualName = driver.findElement(titleLabel).getText();
 //        Assert.assertEquals(expectedName, actualName);

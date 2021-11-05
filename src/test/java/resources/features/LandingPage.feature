@@ -1,6 +1,6 @@
 Feature: Verify landing page functionality
 
-  @ios
+  @land
   Scenario: Verify elements on landing page
     Given Appium server and simulator with application started
     When I verify landing page is loaded

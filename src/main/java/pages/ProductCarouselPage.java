@@ -8,8 +8,6 @@ import org.testng.Assert;
 
 public class ProductCarouselPage extends BaseClassPage {
 
-    EligibilityModalPage eligibilityModalPage;
-    AppFlowPage appFlowPage;
     LaunchPage launchPage;
 
     By openBankAccountButton = By.id("button.openBankAccount");
@@ -20,6 +18,11 @@ public class ProductCarouselPage extends BaseClassPage {
 
     public ProductCarouselPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
+    }
+
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        System.out.println(driver.findElement(openBankAccountButton));
+        return driver.findElement(openBankAccountButton).isDisplayed();
     }
 
     public void verifyOpenBankAccountButton(String expectedName){

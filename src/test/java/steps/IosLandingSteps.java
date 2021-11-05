@@ -17,8 +17,6 @@ import java.util.Map;
 
 public class IosLandingSteps extends BaseClassPage {
 
-//    public static IOSDriver<IOSElement> driver;
-
     LaunchPage launchPage;
 
     @Given("Appium server is running")
@@ -32,7 +30,7 @@ public class IosLandingSteps extends BaseClassPage {
     }
 
     @When("I verify landing page is loaded")
-    public void getLandingPage() {
+    public void verifyLandingPageLoaded() {
         launchPage = new LaunchPage(driver);
         Assert.assertTrue(launchPage.isLoaded(driver));
     }

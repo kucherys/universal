@@ -18,7 +18,6 @@ public class LaunchPage extends BaseClassPage {
     }
 
     public boolean isLoaded(IOSDriver<IOSElement> driver){
-        System.out.println(driver.findElement(logInButton));
         return driver.findElement(logInButton).isDisplayed();
     }
 
