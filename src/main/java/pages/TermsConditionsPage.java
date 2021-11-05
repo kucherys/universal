@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class TermsConditionsPage extends BaseClassPage {
-    
+
     EligibilityConfirmPage eligibilityConfirmPage;
 
     By titleLabel = By.id("label.title");

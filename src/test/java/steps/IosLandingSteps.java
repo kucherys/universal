@@ -44,28 +44,14 @@ public class IosLandingSteps extends BaseClassPage {
         launchPage.verifySignUpButton(signUpButton);
     }
 
-
-    @Then("^I verify all elements on landing page$")
-    public void verifyElementsLandingPage() {
-        launchPage.verifyLogInButton("Log In");
-        launchPage.verifyWelcomeLabel("Welcome to ARBM Digibank");
-        launchPage.verifySignUpButton("I'm new to [ARBM Digibank]");
-
-    }
-
-    @Then("^I verify elements on landing page$")
-    public void verifyElementsLandingPageData(DataTable dataTable) {
-        List<Map<String, String>> data =  dataTable.asMaps(String.class, String.class);
-        String logInButton = data.get(0).get("LogInButton");
-        String logoLabel = data.get(0).get("LogoLabel");
-        String signUpButton = data.get(0).get("SignUpButton");
-        System.out.println(logInButton + " " + logoLabel + " " + signUpButton);
-    }
-
-
-    @Then("^I verify word (.+)$")
-    public void verifyLandingPageEl(String logInButton) {
-        System.out.println(logInButton);
+    @Then("I verify elements on landing page")
+    public void verifyElementsLandingDataPage(DataTable table) {
+        List<Map<String, String>> rows = table.asMaps(String.class, String.class);
+        for (Map<String, String> row : rows){
+            launchPage.verifyLogInButton(row.get("logInButton"));
+            launchPage.verifyWelcomeLabel(row.get("logoLabel"));
+            launchPage.verifySignUpButton(row.get("signUpButton"));
+        }
     }
 
     @After

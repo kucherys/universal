@@ -4,13 +4,13 @@
     "elements": [
       {
         "line": 4,
-        "name": "Verify elements on product carousel page",
+        "name": "Verify elements on landing page",
         "description": "",
-        "id": "verify-product-carousel-page-functionality;verify-elements-on-product-carousel-page",
+        "id": "verify-landing-page-functionality;verify-elements-on-landing-page",
         "after": [
           {
             "result": {
-              "duration": 39260753,
+              "duration": 38299366,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10909326393,
+              "duration": 28872961968,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,98 @@
           },
           {
             "result": {
-              "duration": 149725059,
+              "duration": 165243259,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify landing page is loaded",
+            "match": {
+              "location": "IosLandingSteps.getLandingPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198584972,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I verify elements on landing page",
+            "match": {
+              "location": "IosLandingSteps.verifyElementsLandingDataPage(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "logInButton",
+                  "logoLabel",
+                  "signUpButton"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "Log In",
+                  "Welcome to ARBM Digibank",
+                  "I\u0027m new to [ARBM Digibank]"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@ios"
+          }
+        ]
+      }
+    ],
+    "name": "Verify landing page functionality",
+    "description": "",
+    "id": "verify-landing-page-functionality",
+    "keyword": "Feature",
+    "uri": "LandingPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify elements on product carousel page",
+        "description": "",
+        "id": "verify-product-carousel-page-functionality;verify-elements-on-product-carousel-page",
+        "after": [
+          {
+            "result": {
+              "duration": 91629222,
+              "status": "passed"
+            },
+            "match": {
+              "location": "IosLandingSteps.stopAppiumServer()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13976185223,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Appium server and simulator with application started",
+            "match": {
+              "location": "IosLandingSteps.appiumServerAndApplicationRunning()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135660648,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 191358810,
+              "duration": 204004330,
               "status": "passed"
             },
             "line": 7,
@@ -59,15 +150,47 @@
           },
           {
             "result": {
-              "duration": 1509517986,
+              "duration": 440425999,
               "status": "passed"
             },
             "line": 8,
             "name": "I verify elements on product carousel page",
             "match": {
-              "location": "IosProductCarouselSteps.verifyElementsLandingPage()"
+              "location": "IosProductCarouselSteps.verifyProductCarouselElements(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "logoLabel",
+                  "openBankAccountButton",
+                  "eligibilityLabel",
+                  "instructionText"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "DigiBank",
+                  "Open Bank Account",
+                  "Am I eligible?",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus"
+                ],
+                "line": 10
+              }
+            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1051148578,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify elements on product carousel is spinning",
+            "match": {
+              "location": "IosProductCarouselSteps.verifyProductCarouselSpin()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
