@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class IosProductCarouselSteps extends BaseClassPage {
+public class ProductCarouselSteps extends BaseClassPage {
 
     LaunchPage launchPage;
     ProductCarouselPage prodCarPage;

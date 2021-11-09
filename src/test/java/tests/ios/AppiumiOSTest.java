@@ -1,6 +1,7 @@
 package tests.ios;
 
 import capabilities.BaseClassPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 
@@ -89,6 +90,7 @@ public class AppiumiOSTest extends BaseClassPage {
         termsConditionsPage.verifyBodyTextLabel("We're committed to protecting the data you share with us. Please contact our customer care team with any queries.");
         termsConditionsPage.verifySignUpButton("Confirm");
         termsConditionsPage.verifyTitleLabel("Welcome to a new way of banking");
+        termsConditionsPage.verifyPersonalDataText("Personal Data Protection");
 
     }
 
@@ -132,10 +134,13 @@ public class AppiumiOSTest extends BaseClassPage {
         NameCapturePage captureNamePage = eligibilityConfirmPage.getCaptureNamePage(driver);
         captureNamePage.fillNameTextField("User");
         PhoneCapturePage phoneCapturePage = captureNamePage.getPhoneCapturePage(driver);
-        phoneCapturePage.fillPhoneNumberField("1123456789", true);
-        phoneCapturePage.fillPhoneNumberField("1223456789", false);
-        phoneCapturePage.fillPhoneNumberField("122345678", true);
-        phoneCapturePage.verifyConfirmButton("Confirm");
+        phoneCapturePage.fillPhoneNumberField("1123456789");
+        Assert.assertTrue(phoneCapturePage.getConfirmButtonStatus());
+        phoneCapturePage.fillPhoneNumberField("1223456789");
+        Assert.assertFalse(phoneCapturePage.getConfirmButtonStatus());
+        phoneCapturePage.fillPhoneNumberField("122345678");
+        Assert.assertTrue(phoneCapturePage.getConfirmButtonStatus());
+        phoneCapturePage.getConfirmButtonName("Confirm");
         phoneCapturePage.verifyTitleLabel("What is your mobile number?");
     }
 }

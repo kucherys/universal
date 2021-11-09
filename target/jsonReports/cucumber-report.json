@@ -3,18 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "line": 5,
-        "name": "Verify name and phone capturing pages",
+        "line": 4,
+        "name": "Verify elements on product carousel page",
         "description": "",
-        "id": "verify-name-and-phone-capturing-pages-functionality;verify-name-and-phone-capturing-pages",
+        "id": "verify-product-carousel-page-functionality;verify-elements-on-product-carousel-page",
         "after": [
           {
             "result": {
-              "duration": 39543015,
+              "duration": 39285941,
               "status": "passed"
             },
             "match": {
-              "location": "IosLandingSteps.stopAppiumServer()"
+              "location": "LandingSteps.stopAppiumServer()"
             }
           }
         ],
@@ -23,185 +23,109 @@
         "steps": [
           {
             "result": {
-              "duration": 13214186353,
+              "duration": 26810425339,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "Appium server and simulator with application started",
             "match": {
-              "location": "IosLandingSteps.appiumServerAndApplicationRunning()"
+              "location": "LandingSteps.appiumServerAndApplicationRunning()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 102711332,
+              "duration": 111089787,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify landing page is loaded",
+            "match": {
+              "location": "LandingSteps.verifyLandingPageLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211617890,
               "status": "passed"
             },
             "line": 7,
-            "name": "I verify landing page is loaded",
+            "name": "I log in to product carousel page",
             "match": {
-              "location": "IosLandingSteps.verifyLandingPageLoaded()"
+              "location": "ProductCarouselSteps.getProductCarouselPage()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 188484962,
+              "duration": 230834433,
               "status": "passed"
             },
             "line": 8,
-            "name": "I log in to product carousel page",
+            "name": "I verify product carousel page is loaded",
             "match": {
-              "location": "IosProductCarouselSteps.getProductCarouselPage()"
+              "location": "ProductCarouselSteps.verfyProdCarouselPageLoaded()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 205690165,
+              "duration": 365375148,
               "status": "passed"
             },
             "line": 9,
-            "name": "I verify product carousel page is loaded",
+            "name": "I verify elements on product carousel page",
             "match": {
-              "location": "IosProductCarouselSteps.verfyProdCarouselPageLoaded()"
+              "location": "ProductCarouselSteps.verifyProductCarouselElements(DataTable)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 527658641,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I am openning bank account",
-            "match": {
-              "location": "AppFlowSteps.getAppFlowPage()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "logoLabel",
+                  "openBankAccountButton",
+                  "eligibilityLabel",
+                  "instructionText"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "DigiBank",
+                  "Open Bank Account",
+                  "Am I eligible?",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus"
+                ],
+                "line": 11
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 137235357,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I verify application flow page is loaded",
-            "match": {
-              "location": "AppFlowSteps.verfyAppFlowPageLoaded()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 578390945,
+              "duration": 999503258,
               "status": "passed"
             },
             "line": 12,
-            "name": "I\u0027m processing to terms and conditions page",
+            "name": "I verify elements on product carousel is spinning",
             "match": {
-              "location": "TermsConditionsSteps.getTermsConditionsPage()"
+              "location": "ProductCarouselSteps.verifyProductCarouselSpin()"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 199230769,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I verify terms and conditions page is loaded",
-            "match": {
-              "location": "TermsConditionsSteps.verfyTermsAndConditionsPageLoaded()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "I confirm all terms and conditions",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "I verify eligibility page is loaded",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "I confirm all eligibility conditions",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 18,
-            "name": "I verify name capture page is loaded",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 19,
-            "name": "I enter \"name\" in name capture screen",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "I\u0027m processing to phone capture page",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "I verify phone capture page is loaded",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 22,
-            "name": "I enter \"telephone number\" in malasian phone capture screen",
-            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@name"
+            "line": 3,
+            "name": "@base"
           }
         ]
       }
     ],
-    "name": "Verify name and phone capturing pages functionality",
+    "name": "Verify product carousel page functionality",
     "description": "",
-    "id": "verify-name-and-phone-capturing-pages-functionality",
+    "id": "verify-product-carousel-page-functionality",
     "keyword": "Feature",
-    "uri": "CaptureNameAndTelephonePages.feature"
+    "uri": "ProductCarouselPage.feature"
   }
 ]

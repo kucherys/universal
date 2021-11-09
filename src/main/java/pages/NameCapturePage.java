@@ -19,6 +19,10 @@ public class NameCapturePage extends BaseClassPage {
         this.driver = driver;
     }
 
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        return driver.findElement(title).isDisplayed();
+    }
+
     public void verifyTitleLabel(String expectedName){
         String actualName = driver.findElement(title).getText();
         Assert.assertEquals(expectedName, actualName);

@@ -37,7 +37,9 @@ public class BaseClassPage extends Capabilities {
                 System.out.println("Global method clean up");
         }
 
-
+        public String removeFirstLastChar(String str){
+                return str = str.substring(1, str.length()-1);
+        }
 
 
 }

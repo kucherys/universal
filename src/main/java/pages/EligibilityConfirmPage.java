@@ -28,6 +28,10 @@ public class EligibilityConfirmPage extends BaseClassPage {
         this.driver = driver;
     }
 
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        return driver.findElement(eligibleButton).isDisplayed();
+    }
+
     public void verifyTitleLabel(String expectedName){
         String actualName = driver.findElement(titleLabel).getText();
         Assert.assertEquals(expectedName, actualName);
@@ -48,10 +52,23 @@ public class EligibilityConfirmPage extends BaseClassPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
+    public void selectAllEligCheckboxes (   IOSDriver<IOSElement> driver) throws InterruptedException {
+        driver.findElement(checkboxNationality).click();
+        driver.findElement(checkboxUsCitizen).click();
+        driver.findElement(checkboxTaxRes).click();
+    }
+
+
     public NameCapturePage getCaptureNamePage (   IOSDriver<IOSElement> driver) throws InterruptedException {
         driver.findElement(checkboxNationality).click();
         driver.findElement(checkboxUsCitizen).click();
         driver.findElement(checkboxTaxRes).click();
+        driver.findElement(eligibleButton).click();
+        TimeUnit.SECONDS.sleep(1);
+        return new NameCapturePage(driver);
+    }
+
+    public NameCapturePage confirmeligibility (   IOSDriver<IOSElement> driver) throws InterruptedException {
         driver.findElement(eligibleButton).click();
         TimeUnit.SECONDS.sleep(1);
         return new NameCapturePage(driver);

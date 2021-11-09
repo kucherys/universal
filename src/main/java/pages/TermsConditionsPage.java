@@ -13,7 +13,8 @@ public class TermsConditionsPage extends BaseClassPage {
     By titleLabel = By.id("label.title");
     By bodyText = By.id("label.description");
     By confirmButton = By.id("button.confirm");
-    By checkbox = By.id("checkbox");
+    By checkbox = By.id("checkbox.button");
+    By personelData  = By.id("cell.index_0");
 
     public TermsConditionsPage(IOSDriver<IOSElement> driver){
         this.driver = driver;
@@ -38,8 +39,13 @@ public class TermsConditionsPage extends BaseClassPage {
         Assert.assertEquals(expectedName, actualName);
     }
 
+    public void verifyPersonalDataText(String expectedName){
+        String actualName = driver.findElement(personelData).getText();
+        Assert.assertEquals(actualName, expectedName);
+    }
+
     public EligibilityConfirmPage getEligibilityConfirmPage (IOSDriver<IOSElement> driver){
-//        driver.findElement(checkbox).click();
+        driver.findElement(checkbox).click();
         driver.findElement(confirmButton).click();
         return new EligibilityConfirmPage(driver);
     }
