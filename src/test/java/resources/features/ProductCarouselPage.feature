@@ -1,6 +1,6 @@
 Feature: Verify product carousel page functionality
 
-  @carousel
+  @prod-carousel
   Scenario: Verify elements on product carousel page
     Given Appium server and simulator with application started
     And I verify landing page is loaded

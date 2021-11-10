@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/resources/features"},
         plugin = {"json:target/jsonReports/cucumber-report.json"},
         glue = {"steps"},
-        tags = "@carousel")
+        tags = "@prod-carousel")
 
 public class TestRunner {
 }
