@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 32,
-        "name": "Verify name and phone capturing pages",
+        "line": 4,
+        "name": "Verify elements on product carousel page",
         "description": "",
-        "id": "verify-name-and-phone-capturing-pages-functionality;verify-name-and-phone-capturing-pages;;2",
+        "id": "verify-product-carousel-page-functionality;verify-elements-on-product-carousel-page",
         "after": [
           {
             "result": {
-              "duration": 56589968,
+              "duration": 53626883,
               "status": "passed"
             },
             "match": {
@@ -19,14 +19,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 72280225002,
+              "duration": 14774474202,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "Appium server and simulator with application started",
             "match": {
               "location": "LandingSteps.appiumServerAndApplicationRunning()"
@@ -35,10 +35,10 @@
           },
           {
             "result": {
-              "duration": 132008227,
+              "duration": 97030330,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "I verify landing page is loaded",
             "match": {
               "location": "LandingSteps.verifyLandingPageLoaded()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 347724707,
+              "duration": 190664875,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "I log in to product carousel page",
             "match": {
               "location": "ProductCarouselSteps.getProductCarouselPage()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 200165983,
+              "duration": 214848862,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "I verify product carousel page is loaded",
             "match": {
               "location": "ProductCarouselSteps.verfyProdCarouselPageLoaded()"
@@ -71,248 +71,61 @@
           },
           {
             "result": {
-              "duration": 480305526,
+              "duration": 363246849,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I am openning bank account",
+            "line": 9,
+            "name": "I verify elements on product carousel page",
             "match": {
-              "location": "AppFlowSteps.getAppFlowPage()"
+              "location": "ProductCarouselSteps.verifyProductCarouselElements(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "logoLabel",
+                  "openBankAccountButton",
+                  "eligibilityLabel",
+                  "instructionText"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "DigiBank",
+                  "Open Bank Account",
+                  "Am I eligible?",
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus"
+                ],
+                "line": 11
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 135713195,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I verify application flow page is loaded",
-            "match": {
-              "location": "AppFlowSteps.verfyAppFlowPageLoaded()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 563180571,
+              "duration": 1008891184,
               "status": "passed"
             },
             "line": 12,
-            "name": "I\u0027m processing to terms and conditions page",
+            "name": "I verify elements on product carousel is spinning",
             "match": {
-              "location": "TermsConditionsSteps.getTermsConditionsPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 178855546,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I verify terms and conditions page is loaded",
-            "match": {
-              "location": "TermsConditionsSteps.verfyTermsAndConditionsPageLoaded()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 794902944,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I confirm all terms and conditions are met",
-            "match": {
-              "location": "EligibilityConfirmSteps.getEligibilityConditionsPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 199713017,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I verify eligibility page is loaded",
-            "match": {
-              "location": "EligibilityConfirmSteps.verfyEligibilityPageLoaded()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 974861186,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I select all eligibility criteria on eligibility page",
-            "match": {
-              "location": "EligibilityConfirmSteps.selectAllEligibilityCheckboxesPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1304185297,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I confirm I am eligible and progress to name capture page",
-            "match": {
-              "location": "EligibilityConfirmSteps.getNamePage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 312572772,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I verify name capture page is loaded",
-            "match": {
-              "location": "NameCaptureSteps.verfyNameCapturePageLoaded()"
+              "location": "ProductCarouselSteps.verifyProductCarouselSpin()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2292431117,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "I enter Test name value in name capture screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Test name",
-                  "offset": 8
-                }
-              ],
-              "location": "NameCaptureSteps.enterUserName(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 511634741,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I am processing to phone capture page",
-            "match": {
-              "location": "NameCaptureSteps.getPhoneNumberPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 190582249,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "I verify phone capture page is loaded",
-            "match": {
-              "location": "PhoneCaptureSteps.verfyPhoneCapturePageLoaded()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3008100286,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "I enter 11222233335 phone value in phone capture screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "11222233335",
-                  "offset": 8
-                }
-              ],
-              "location": "PhoneCaptureSteps.enterValidPhoneNumbet(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 116304798,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "I verify status of Confirm button is disabled",
-            "match": {
-              "arguments": [
-                {
-                  "val": "disabled",
-                  "offset": 37
-                }
-              ],
-              "location": "PhoneCaptureSteps.verifyConfirmButton(String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7159113883,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "I enter 1122223333 phone value in phone capture screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1122223333",
-                  "offset": 8
-                }
-              ],
-              "location": "PhoneCaptureSteps.enterValidPhoneNumbet(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 123660382,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I verify status of Confirm button is enabled",
-            "match": {
-              "arguments": [
-                {
-                  "val": "enabled",
-                  "offset": 37
-                }
-              ],
-              "location": "PhoneCaptureSteps.verifyConfirmButton(String)"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@name"
+            "name": "@base"
           }
         ]
       }
     ],
-    "name": "Verify name and phone capturing pages functionality",
+    "name": "Verify product carousel page functionality",
     "description": "",
-    "id": "verify-name-and-phone-capturing-pages-functionality",
+    "id": "verify-product-carousel-page-functionality",
     "keyword": "Feature",
-    "uri": "CaptureNameAndTelephonePages.feature"
+    "uri": "ProductCarouselPage.feature"
   }
 ]
