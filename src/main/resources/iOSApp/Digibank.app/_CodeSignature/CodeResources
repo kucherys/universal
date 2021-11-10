@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AdHoc.xcconfig</key>
-		<data>
-		Qk4yKGpc2CY2Dr1QQieyJzKZChk=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		N/riTIJxbzi1rBzxcPSjlYowpCs=
+		IlVO0fznO0S9SWGK/Ss0Teo5ac4=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -23,10 +19,6 @@
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
 		U0x8EM0781fCPb62BbZIXKeDlZ4=
-		</data>
-		<key>Debug.xcconfig</key>
-		<data>
-		Ti6jpmFyigrvDcXblNJiVyimNXU=
 		</data>
 		<key>Frameworks/DesignSystem.framework/CircularStd-Black.otf</key>
 		<data>
@@ -62,7 +54,7 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/DesignSystem</key>
 		<data>
-		MVWFQFv0lNoGOeHI+/iftc83dAs=
+		Au0RfPqwNg8zcSaHLwb1TnBWnpw=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<data>
@@ -72,9 +64,21 @@
 		<data>
 		iVeMxZ0UmEyJY5PA8ESfyTnjHEU=
 		</data>
+		<key>Frameworks/OneSignal.framework/Info.plist</key>
+		<data>
+		8rA1RGNXtBOgo5CKelbKlBsNQac=
+		</data>
+		<key>Frameworks/OneSignal.framework/OneSignal</key>
+		<data>
+		syF/5hCoXPJgDSnWpLteptf52G4=
+		</data>
+		<key>Frameworks/OneSignal.framework/_CodeSignature/CodeResources</key>
+		<data>
+		XEYntsArUJH+XLg6rqnyq6OkLAc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		VegeYZLZiOcnoBq2HAinbITs22A=
+		zdEYayNqP0XBul9ERKerKUeDfUs=
 		</data>
 		<key>PhoneNumberKitResources.bundle/Info.plist</key>
 		<data>
@@ -108,15 +112,11 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>Release.xcconfig</key>
-		<data>
-		J8iZneUnG/aNqahnOH+t7TVZIMY=
-		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1VaZwgtBYRNiUTBgPVdTuxsYFa0=
+			dlllXsokaBbRpSocCXMxqRf/x6o=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -124,18 +124,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AdHoc.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kuIhy1rEHdG1zC/J4HwnolHCXaNtO9W+YXL+T2MvM3k=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBYcw/qQMI1+fzFILe38RvaD/12Wl8pPZ6cPAvZfmqQ=
+			9r9wI0ohOaTqIyOBTQ9pIYJKuVMbSPL3H7F/MoiQHBM=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -157,13 +150,6 @@
 			<key>hash2</key>
 			<data>
 			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
-			</data>
-		</dict>
-		<key>Debug.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Md2P96kfG2DHgqdfiGzCyqLGiig3HLUI12o4WKL53Qs=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/CircularStd-Black.otf</key>
@@ -226,7 +212,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ffNhsb6cUMxWk1OYG6Z3F6kvOKdIc46xbjdi34FGego=
+			45bwzAc79x7x4PlMn3YzG+bYBO8/fuA7zt4gGGF4pWo=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
@@ -241,6 +227,27 @@
 			<key>hash2</key>
 			<data>
 			pEuDhRvxAy946HX7vpDMqpxMX6ULBl/X/LtT6jutTeI=
+			</data>
+		</dict>
+		<key>Frameworks/OneSignal.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yf4+tDp0eV3nEX1HY31whAHKPL77Bn+WuRw1o4z3xYs=
+			</data>
+		</dict>
+		<key>Frameworks/OneSignal.framework/OneSignal</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KiZpieQftNtofEp08wftyrtsEvnDu1gUCeh/7P/D63E=
+			</data>
+		</dict>
+		<key>Frameworks/OneSignal.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9CA0iAOTGeBJ7n55CY0nC/p35mEQVJSsUzzK0P3l5Hk=
 			</data>
 		</dict>
 		<key>PhoneNumberKitResources.bundle/Info.plist</key>
@@ -292,18 +299,11 @@
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
-		<key>Release.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CkGIhyY85HcW2onb9VkJGHpHEi9r0G5OctophSN9P2U=
-			</data>
-		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gfdgqSCFm2hlHpKx54IQPVZbDeMiDJPcqgGil/aEDeA=
+			R3sDX45ZM9yn83l4VBKaAgAD4PWHPGL+FTLvWSZEvp4=
 			</data>
 			<key>optional</key>
 			<true/>
