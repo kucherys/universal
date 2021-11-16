@@ -1,6 +1,6 @@
 package pages;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class EligibilityConfirmPage extends BaseClassPage {
+public class EligibilityConfirmPage extends BaseClass {
 
 
     NameCapturePage captureNamePage;

@@ -1,12 +1,12 @@
 package pages;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class ProductCarouselPage extends BaseClassPage {
+public class ProductCarouselPage extends BaseClass {
 
     LaunchPage launchPage;
 

@@ -1,13 +1,12 @@
 package pages;
 
-import capabilities.BaseClassPage;
-import cucumber.api.java.en.When;
+import capabilities.BaseClass;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class LaunchPage extends BaseClassPage {
+public class LaunchPage extends BaseClass {
 
     By logInButton = By.id("button.logIn");
     By signInButton = By.id("button.signIn");

@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 
-public class BaseClassPage extends Capabilities {
+public class BaseClass extends Capabilities {
 
         public static IOSDriver<IOSElement> driver;
 

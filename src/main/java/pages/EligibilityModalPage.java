@@ -23,6 +23,10 @@ public class EligibilityModalPage {
         this.driver = driver;
     }
 
+    public boolean isLoaded(IOSDriver<IOSElement> driver){
+        return driver.findElement(eligibilityLabel).isDisplayed();
+    }
+
     public void verifyCloseButton(){
         String actualName = driver.findElement(closeButton).getText();
         Assert.assertEquals("multiply", actualName);
@@ -47,8 +51,14 @@ public class EligibilityModalPage {
         List<String> transformActual = new ArrayList<>();
         actualString.forEach(s -> transformActual.add(s.replace("\n", "")));
         transformActual.removeAll(Arrays.asList("", null));
-        Collections.sort(transformActual);
-        Collections.sort(expectedString);
+//        Collections.sort(transformActual);
+//        Collections.sort(expectedString);
+
+        System.out.println("ACTUAL");
+        for (String i:transformActual){
+            System.out.println(i);
+        }
+
         Assert.assertTrue(transformActual.equals(expectedString));
     }
 

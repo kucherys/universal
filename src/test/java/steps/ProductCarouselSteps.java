@@ -1,6 +1,6 @@
 package steps;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -8,11 +8,10 @@ import org.testng.Assert;
 import pages.LaunchPage;
 import pages.ProductCarouselPage;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class ProductCarouselSteps extends BaseClassPage {
+public class ProductCarouselSteps extends BaseClass {
 
     LaunchPage launchPage;
     ProductCarouselPage prodCarPage;

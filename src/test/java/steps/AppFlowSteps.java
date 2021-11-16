@@ -1,18 +1,17 @@
 package steps;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
 import pages.AppFlowPage;
-import pages.LaunchPage;
 import pages.ProductCarouselPage;
 
 import java.util.List;
 import java.util.Map;
 
-public class AppFlowSteps extends BaseClassPage {
+public class AppFlowSteps extends BaseClass {
 
     ProductCarouselPage prodCarPage;
     AppFlowPage appFlowPage;
@@ -30,13 +29,23 @@ public class AppFlowSteps extends BaseClassPage {
     }
 
     @Then("I verify elements on application flow page")
-    public void verifyProductCarouselElements(DataTable table) {
+    public void verifyAppFlowElements(DataTable table) {
         List<Map<String, String>> rows = table.asMaps(String.class, String.class);
         for (Map<String, String> row : rows){
-            prodCarPage.verifyOpenBankAccountButton(row.get("openBankAccountButton"));
-            prodCarPage.verifyEligibilityLabel(row.get("eligibilityLabel"));
-            prodCarPage.verifyInstructionText(row.get("instructionText"));
-            prodCarPage.verifyLogoLabel(row.get("logoLabel"));
+            appFlowPage.verifyFirstTextLabel(row.get("labelFirst"));
+            appFlowPage.verifySecondTextLabel(row.get("labelSecond"));
+            appFlowPage.verifySignUpButton(row.get("signUpButton"));
+            appFlowPage.verifyTitleLabel(row.get("logoLabel"));
         }
+    }
+
+    @Then("I verify progress bar elements on application flow page")
+    public void verifyProgressBarElements(List<String> list) {
+        appFlowPage.verifyProgressBarLabels(list.get(0),list.get(1),list.get(2),list.get(3));
+    }
+
+    @Then("^I verify logo as (.+) on application flow page$")
+    public void verifyLogo(String logo)  {
+        appFlowPage.verifyTitleLabel(logo);
     }
 }

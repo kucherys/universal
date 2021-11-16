@@ -1,13 +1,12 @@
 package steps;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
 import pages.AppFlowPage;
-import pages.ProductCarouselPage;
 import pages.TermsConditionsPage;
 
-public class TermsConditionsSteps extends BaseClassPage {
+public class TermsConditionsSteps extends BaseClass {
 
     AppFlowPage appFlowPage;
     TermsConditionsPage termsConditionsPage;

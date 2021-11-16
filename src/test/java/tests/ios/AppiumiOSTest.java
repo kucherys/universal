@@ -1,6 +1,6 @@
 package tests.ios;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AppiumiOSTest extends BaseClassPage {
+public class AppiumiOSTest extends BaseClass {
 
     LaunchPage launchPage;
     EligibilityModalPage eligibilityModalPage;

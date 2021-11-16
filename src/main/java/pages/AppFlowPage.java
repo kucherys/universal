@@ -1,12 +1,12 @@
 package pages;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class AppFlowPage extends BaseClassPage {
+public class AppFlowPage extends BaseClass {
 
     By backArrow = By.id("button.back");
     By titleLabel = By.id("label.title");
@@ -37,24 +37,24 @@ public class AppFlowPage extends BaseClassPage {
 
     public void verifyTitleLabel(String expectedName){
         String actualName = driver.findElement(titleLabel).getText();
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(actualName, expectedName);
     }
 
     public void verifyFirstTextLabel(String expectedName){
         String actualName = driver.findElement(textFirstLable).getText();
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(actualName, expectedName);
     }
 
     public void verifySecondTextLabel(String expectedName){
         String actualName = driver.findElement(textSecondLable).getText();
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(actualName, expectedName);
     }
 
     public void verifyProgressBarStatus(boolean expectedStatus, String expectedName){
         boolean actualStatus = driver.findElement(signUpButton).isEnabled();
         Assert.assertEquals(expectedStatus, actualStatus);
         String actualName = driver.findElement(progressSignUpText).getText();
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(actualName, expectedName);
     }
 
     public void verifyProgressBarLabels(String expSignUpLabel, String expPersDetLabel, String expCreAccLabel, String expToUpAccLabel){
@@ -70,7 +70,7 @@ public class AppFlowPage extends BaseClassPage {
 
     public void verifySignUpButton(String expectedName){
         String actualName = driver.findElement(signUpButton).getText();
-        Assert.assertEquals(expectedName, actualName);
+        Assert.assertEquals(actualName, expectedName);
     }
 
     public TermsConditionsPage getTermsConditionsPage(IOSDriver<IOSElement> driver){

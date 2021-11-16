@@ -1,13 +1,11 @@
 package steps;
 
-import capabilities.BaseClassPage;
+import capabilities.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
 import org.testng.Assert;
 import pages.LaunchPage;
 
@@ -15,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class LandingSteps extends BaseClassPage {
+public class LandingSteps extends BaseClass {
 
     LaunchPage launchPage;
 
@@ -54,7 +52,7 @@ public class LandingSteps extends BaseClassPage {
 
     @After
     public void stopAppiumServer(){
-        System.out.println("Spop appium server");
+        System.out.println("Stop appium server");
         service.stop();
     }
 }
