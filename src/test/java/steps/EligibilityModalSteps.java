@@ -1,14 +1,15 @@
 package steps;
 
-import capabilities.BaseClass;
+import capabilities.BaseClassIos;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.*;
+import pages.o1.EligibilityModalPage;
+import pages.o1.ProductCarouselPage;
 
 import java.util.List;
 
-public class EligibilityModalSteps extends BaseClass {
+public class EligibilityModalSteps extends BaseClassIos {
 
     ProductCarouselPage prodCarPage;
     EligibilityModalPage eligPage;
@@ -21,7 +22,7 @@ public class EligibilityModalSteps extends BaseClass {
 
     @Then("I verify elements on Eligibility criteria modal")
     public void verifyEligibilityCriteriaModal(List<String> listStr) {
-        eligPage.verifyEligibilityLabelName("Eligibility criteria");
+        eligPage.verifyEligibilityLabelName("I'm eligible because...");
         eligPage.verifyEligibilityList(listStr);
     }
 

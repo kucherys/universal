@@ -43,7 +43,30 @@ public class Capabilities {
         return isServerRunning;
     }
 
-    public static IOSDriver<IOSElement> capabilities(String appName) throws IOException, InterruptedException {
+    public static void StartEmulator() throws IOException, InterruptedException {
+        Runtime.getRuntime().exec(System.getProperty("user.dir") + "//src//main//resources//startEmulator.sh");
+        Thread.sleep(6000);
+    }
+
+    public static AndroidDriver<AndroidElement> capabilitiesAndroid(String appName) throws IOException, InterruptedException {
+        AndroidDriver<AndroidElement> driver;
+        File appDir = new File("src");
+        File app = new File(appDir, appName);
+        DesiredCapabilities cap = new DesiredCapabilities();
+        StartEmulator();
+        cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidEmulator");
+        cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+
+        cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
+        cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        return driver;
+    }
+
+    public static IOSDriver<IOSElement> capabilitiesIos(String appName) throws IOException, InterruptedException {
         IOSDriver<IOSElement> driver;
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);

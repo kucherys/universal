@@ -1,13 +1,13 @@
 package steps;
 
-import capabilities.BaseClass;
+import capabilities.BaseClassIos;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.EligibilityConfirmPage;
-import pages.NameCapturePage;
-import pages.TermsConditionsPage;
+import pages.o1.EligibilityConfirmPage;
+import pages.o1.NameCapturePage;
+import pages.o1.TermsConditionsPage;
 
-public class EligibilityConfirmSteps extends BaseClass {
+public class EligibilityConfirmSteps extends BaseClassIos {
 
     TermsConditionsPage termsConditionsPage;
     EligibilityConfirmPage eligibilityConfirmPage;

@@ -1,13 +1,14 @@
 package steps;
 
-import capabilities.BaseClass;
+import capabilities.BaseClassIos;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.EligibilityConfirmPage;
-import pages.NameCapturePage;
-import pages.PhoneCapturePage;
+import pages.o1.EligibilityConfirmPage;
+import pages.o1.NameCapturePage;
+import pages.o1.PhoneCapturePage;
+import pages.o2.OneTimePass609Page;
 
-public class PhoneCaptureSteps extends BaseClass {
+public class PhoneCaptureSteps extends BaseClassIos {
 
     EligibilityConfirmPage eligibilityConfirmPage;
     NameCapturePage nameCapturePage;
@@ -31,5 +32,11 @@ public class PhoneCaptureSteps extends BaseClass {
         } else if (status.equals("enabled")) {
             Assert.assertTrue(phoneCapturePage.getConfirmButtonStatus());
         }
+    }
+
+    @When("I confirm mobile number and progress to one time password page")
+    public OneTimePass609Page getOnetimePassword() {
+        phoneCapturePage = new PhoneCapturePage(driver);
+        return phoneCapturePage.getOneTimePass609Page(driver);
     }
 }

@@ -1,17 +1,17 @@
 package steps;
 
-import capabilities.BaseClass;
+import capabilities.BaseClassIos;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.LaunchPage;
-import pages.ProductCarouselPage;
+import pages.o1.LaunchPage;
+import pages.o1.ProductCarouselPage;
 
 import java.util.List;
 import java.util.Map;
 
-public class ProductCarouselSteps extends BaseClass {
+public class ProductCarouselSteps extends BaseClassIos {
 
     LaunchPage launchPage;
     ProductCarouselPage prodCarPage;

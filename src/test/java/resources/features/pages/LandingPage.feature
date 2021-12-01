@@ -5,6 +5,6 @@ Feature: Verify landing page functionality
     Given Appium server and simulator with application started
     When I verify landing page is loaded
     Then I verify elements on landing page
-      | logInButton | logoLabel                | signUpButton               |
-      | Log In      | Welcome to ARBM Digibank | I'm new to [ARBM Digibank] |
+      | logInButton | logoLabel  | signUpButton        |
+      | Log in      | Welcome to | I'm new to Digibank |
 

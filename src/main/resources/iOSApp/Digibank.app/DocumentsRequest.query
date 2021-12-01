@@ -1,0 +1,14 @@
+query Documents {
+  documents {
+    url
+    title
+    version
+    type
+    subdocuments {
+      url
+      title
+      version
+      type
+    }
+  }
+}
