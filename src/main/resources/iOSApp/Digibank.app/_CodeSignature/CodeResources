@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		TUPLhyXdj6C2qxPDXvTPAvmj+ow=
+		VRHPKkxEE1p2BnnTrKDRX89k92o=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -24,9 +24,25 @@
 		<data>
 		U0x8EM0781fCPb62BbZIXKeDlZ4=
 		</data>
+		<key>ConfirmPhoneNumberRequest.query</key>
+		<data>
+		7hGBt8fSU4ik8J6FFO87XIIs62Q=
+		</data>
+		<key>CreateAccountRequest.query</key>
+		<data>
+		XjX4yzPtUaw6BmUNp/FQke/btPE=
+		</data>
+		<key>CreateInitialCustomerRequest.query</key>
+		<data>
+		kLJ5a9vq3z4DPskUtsPnaabP/HY=
+		</data>
+		<key>CustomerIdentityVerificationsRequest.query</key>
+		<data>
+		jzssXKTDl3A3FvhLkZKUBgyh8vU=
+		</data>
 		<key>DocumentsRequest.query</key>
 		<data>
-		ZxF6H/DkeXNBYiqFR9RyPp28wPw=
+		gs+4sAtT0uL/x6TSVZMPf9G8tvs=
 		</data>
 		<key>Frameworks/BAMCheckout.framework/Assets.car</key>
 		<data>
@@ -246,7 +262,7 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/DesignSystem</key>
 		<data>
-		GPNB8vE9RKslFgdNcfwFSgSkTYw=
+		c+kiHj4ecTzKwDYbOb1xL51j7jI=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<data>
@@ -746,11 +762,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UAQVbde2ShGIHEtQUi55Plx7eMs=
+		exoSKk5mlzbMc65O/5uQXuOP9Q4=
 		</data>
 		<key>InfoPlist.strings</key>
 		<data>
-		6umwkkndbgYr0X+2jgTUIbltth8=
+		JfPeoDHtJno6uryAYbumet4Qgw8=
+		</data>
+		<key>OTPRequest.query</key>
+		<data>
+		8nXs80eQ62X3mclo4BhFS8D96QE=
 		</data>
 		<key>PhoneNumberKitResources.bundle/Info.plist</key>
 		<data>
@@ -783,6 +803,10 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>UpdateCustomerRequest.query</key>
+		<data>
+		XjX4yzPtUaw6BmUNp/FQke/btPE=
 		</data>
 		<key>af.lproj/Localizable-DocumentVerification.strings</key>
 		<dict>
@@ -941,7 +965,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nbnrrRZ9XrfYCG4Ln9bq2t5gMbk=
+			CoBsUOj9ffJwvCAuU5eySjtDyg8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1500,7 +1524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MCqAm4lVdyTwojs7fImfVUwB9eaB2bzn85iRCPr03VM=
+			iw219nN4q6RACYhzQLWLp6HzfARjI+QOnhgUaN/bXFY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -1524,11 +1548,39 @@
 			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
 			</data>
 		</dict>
+		<key>ConfirmPhoneNumberRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HIu6ED6YcolLPDG3tZXLQ4+PG3uiMLzcFbt1g6c2cj4=
+			</data>
+		</dict>
+		<key>CreateAccountRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nVVbJlE5ODJNDodMZ4pTiIs0a5j2/INFfKZKeUk1v94=
+			</data>
+		</dict>
+		<key>CreateInitialCustomerRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SI/4HvH6u/mEUy7ww+JMyR3vlKSMyE6jgBvDhhoD6fY=
+			</data>
+		</dict>
+		<key>CustomerIdentityVerificationsRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yHQasg2IHj2XTLSF+DPI+m/s0mwcylOVbeaQ5U8d+8U=
+			</data>
+		</dict>
 		<key>DocumentsRequest.query</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H3ZvGoMsSbpooWV5lUt55ObvxOc+LX4snBkjZG7Q5bw=
+			PcDu/6Z7sQmfAg5XlgI9XBJm4xNjkAedvkdpsAFcaC4=
 			</data>
 		</dict>
 		<key>Frameworks/BAMCheckout.framework/Assets.car</key>
@@ -1913,7 +1965,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZeAqxR85atvZvIkO4hpRJYoB4IQ7NG4eygyfbkbh4w=
+			5p68B4dpPiobDhKRkylaOsGX7D80scFghnw+sYHhpBo=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
@@ -2761,7 +2813,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ahrStePmE4mWrHlbl+8meqpFk3R+zgjTZpf+3QrGjRQ=
+			KP0SXCmoCsMF5gAOo7ZEFDDJ0q+YCT/ddnzijmuKZHs=
+			</data>
+		</dict>
+		<key>OTPRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uxn3G4oAXFFqfni2DCDgSF3+wZVDKKOJw93VgwTcOu4=
 			</data>
 		</dict>
 		<key>PhoneNumberKitResources.bundle/Info.plist</key>
@@ -2811,6 +2870,13 @@
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>UpdateCustomerRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nVVbJlE5ODJNDodMZ4pTiIs0a5j2/INFfKZKeUk1v94=
 			</data>
 		</dict>
 		<key>af.lproj/Localizable-DocumentVerification.strings</key>
@@ -2970,7 +3036,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tQ7yHdlzOkFDJpYcJB9OaFVAf8CqvBe8hyNsjGMFUM=
+			IuWTY+sZ35ou0274d4XV2v0eQnY1YL6uGMor3JE+xOo=
 			</data>
 			<key>optional</key>
 			<true/>

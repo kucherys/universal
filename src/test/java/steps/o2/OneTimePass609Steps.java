@@ -14,7 +14,7 @@ public class OneTimePass609Steps extends BaseClassIos {
     OneTimePass609Page oneTimePass609Page;
 
     @Then("I verify one time password page is loaded")
-    public void verfyNameCapturePageLoaded() {
+    public void verfyNameCapturePageLoaded() throws InterruptedException {
         oneTimePass609Page = new OneTimePass609Page(driver);
         Assert.assertTrue(oneTimePass609Page.isLoaded(driver));
     }

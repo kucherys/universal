@@ -6,6 +6,8 @@ import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class TermsConditionsPage extends BaseClassIos {
 
     EligibilityConfirmPage eligibilityConfirmPage;
@@ -20,8 +22,9 @@ public class TermsConditionsPage extends BaseClassIos {
         this.driver = driver;
     }
 
-    public boolean isLoaded(IOSDriver<IOSElement> driver){
-        return driver.findElement(bodyText).isDisplayed();
+    public boolean isLoaded(IOSDriver<IOSElement> driver) throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        return driver.findElement(confirmButton).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName){

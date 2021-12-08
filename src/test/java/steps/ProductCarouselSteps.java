@@ -11,6 +11,8 @@ import pages.o1.ProductCarouselPage;
 import java.util.List;
 import java.util.Map;
 
+import static java.lang.Thread.sleep;
+
 public class ProductCarouselSteps extends BaseClassIos {
 
     LaunchPage launchPage;
@@ -29,15 +31,26 @@ public class ProductCarouselSteps extends BaseClassIos {
     }
 
     @Then("I verify elements on product carousel page")
-    public void verifyProductCarouselElements(DataTable table) {
+    public void verifyProductCarouselElements(DataTable table) throws InterruptedException {
             List<Map<String, String>> rows = table.asMaps(String.class, String.class);
             for (Map<String, String> row : rows){
                 prodCarPage.verifyOpenBankAccountButton(row.get("openBankAccountButton"));
                 prodCarPage.verifyEligibilityLabel(row.get("eligibilityLabel"));
                 prodCarPage.verifyInstructionText(row.get("instructionText"));
-                prodCarPage.verifyLogoLabel(row.get("logoLabel"));
             }
     }
+//    public void verifyProductCarouselElements(DataTable table) throws InterruptedException {
+//        List<Map<String, String>> rows = table.asMaps(String.class, String.class);
+//        for (Map<String, String> row : rows){
+//            prodCarPage.spinToCarouselPage(row.get("pageNumber"), driver);
+//            sleep(1000);
+//            prodCarPage.verifyLogoLabel(row.get("logoText"));
+//            prodCarPage.verifyOpenBankAccountButton(row.get("openBankAccountButton"));
+//            prodCarPage.verifyEligibilityLabel(row.get("eligibilityLabel"));
+//            prodCarPage.verifyInstructionText(row.get("instructionText"));
+//            prodCarPage.verifyImagePresent();
+//        }
+//    }
 
     @Then("I verify elements on product carousel is spinning")
     public void verifyProductCarouselSpin() {

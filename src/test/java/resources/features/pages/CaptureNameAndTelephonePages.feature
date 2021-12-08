@@ -10,7 +10,7 @@ Feature: Verify name and phone capturing pages functionality
     Then I am openning bank account
     And I verify application flow page is loaded
     When I'm processing to terms and conditions page
-    Then I verify terms and conditions page is loaded
+#    Then I verify terms and conditions page is loaded
     When I confirm all terms and conditions are met
     Then I verify eligibility page is loaded
     When I select all eligibility criteria on eligibility page

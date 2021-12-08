@@ -11,8 +11,8 @@ Feature: Verify Onboarding flow for iOS
     When I log in to product carousel page
     And I verify product carousel page is loaded
     Then I verify elements on product carousel page
-      | logoLabel | openBankAccountButton | eligibilityLabel | instructionText                                                                    |
-      | DigiBank  | Open Bank Account     | Am I eligible?   | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper aliquet risus |
+      | openBankAccountButton | eligibilityLabel | instructionText             |
+      | Open Bank Account     | Am I eligible?   | Manage your money on the go |
     And I verify elements on product carousel is spinning
     When I verify if I am eligible
     And I verify Eligibility criteria modal is loaded
@@ -36,7 +36,6 @@ Feature: Verify Onboarding flow for iOS
       | Top up account            |
     When I'm processing to terms and conditions page
     Then I verify terms and conditions page is loaded
-#    And I verify elements on terms and conditions page
     When I confirm all terms and conditions are met
     Then I verify eligibility page is loaded
 #    And I verify elements on eligibility page
@@ -47,9 +46,6 @@ Feature: Verify Onboarding flow for iOS
     When I enter <nameValue> value in name capture screen
     And I am processing to phone capture page
     And I verify phone capture page is loaded
-
-#    And I enter <invalidPhoneValue> phone value in phone capture screen
-#    Then I verify status of Confirm button is disabled
 
     And I enter <validPhoneValue> phone value in phone capture screen
     Then I verify status of Confirm button is enabled
@@ -63,5 +59,5 @@ Feature: Verify Onboarding flow for iOS
     And I allow notification in pop up
 
     Examples:
-      | nameValue | validPhoneValue | invalidPhoneValue | passwordValue |
-      | Test name | 1122223333      | 11222233335       | 123456        |
+      | nameValue | validPhoneValue | passwordValue |
+      | Test      | 1122223333      | 123456        |

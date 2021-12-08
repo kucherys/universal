@@ -12,7 +12,7 @@ public class TermsConditionsSteps extends BaseClassIos {
     TermsConditionsPage termsConditionsPage;
 
     @When("I verify terms and conditions page is loaded")
-    public void verfyTermsAndConditionsPageLoaded() {
+    public void verfyTermsAndConditionsPageLoaded() throws InterruptedException {
         termsConditionsPage = new TermsConditionsPage(driver);
         Assert.assertTrue(termsConditionsPage.isLoaded(driver));
     }

@@ -1,14 +1,17 @@
 query Documents {
   documents {
-    url
-    title
-    version
-    type
-    subdocuments {
+    documents {
       url
       title
       version
       type
     }
+    success
+    error {
+      code
+      name
+      message
+    }
+    message
   }
 }

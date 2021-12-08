@@ -1,0 +1,9 @@
+mutation Mutation($otp: Int!, $customerMobileInput: CustomerMobileDeviceInput!) {
+  enterOtp(otp: $otp) {
+    success
+  }
+  createInitialCustomer(customerMobileInput: $customerMobileInput) {
+    customerId
+    success
+  }
+}
