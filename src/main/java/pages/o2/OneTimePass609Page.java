@@ -21,7 +21,7 @@ public class OneTimePass609Page extends BaseClassIos {
     }
 
     public boolean isLoaded(IOSDriver<IOSElement> driver) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         return driver.findElement(nextButton).isDisplayed();
     }
 

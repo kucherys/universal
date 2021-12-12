@@ -27,6 +27,12 @@ public class IosLandingSteps extends BaseClassIos {
         setupClassGlobal();
     }
 
+    @When("I verify landing page is loaded generic")
+    public void verifyLandingPageLoadedGeneric() {
+        launchPage = new LaunchPage(driver);
+        Assert.assertTrue(launchPage.isLoaded(driver));
+    }
+
     @When("I verify landing page is loaded")
     public void verifyLandingPageLoaded() {
         launchPage = new LaunchPage(driver);

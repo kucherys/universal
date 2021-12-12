@@ -32,8 +32,7 @@ public class AppFlowSteps extends BaseClassIos {
     public void verifyAppFlowElements(DataTable table) {
         List<Map<String, String>> rows = table.asMaps(String.class, String.class);
         for (Map<String, String> row : rows){
-            appFlowPage.verifyFirstTextLabel(row.get("labelFirst"));
-            appFlowPage.verifySecondTextLabel(row.get("labelSecond"));
+            appFlowPage.verifyLabelDescription(row.get("labelDescription"));
             appFlowPage.verifySignUpButton(row.get("signUpButton"));
             appFlowPage.verifyTitleLabel(row.get("logoLabel"));
         }

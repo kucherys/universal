@@ -6,8 +6,8 @@ Feature: Verify Onboarding flow for iOS
     Given Appium server and simulator with application started
     And I verify landing page is loaded
     Then I verify elements on landing page
-      | logInButton | logoLabel  | signUpButton        |
-      | Log in      | Welcome to | I'm new to Digibank |
+      | logInButton | logoLabel  | signUpButton    |
+      | Log in      | Welcome to | I'm new to Ryse |
     When I log in to product carousel page
     And I verify product carousel page is loaded
     Then I verify elements on product carousel page
@@ -17,25 +17,25 @@ Feature: Verify Onboarding flow for iOS
     When I verify if I am eligible
     And I verify Eligibility criteria modal is loaded
     Then I verify elements on Eligibility criteria modal
-      | I am a Malaysian with a MyKad, residing in Malaysia                       |
-      | I am aged 18 and above                                                    |
+      | I'm a Malaysian citizen with a MyKad, currently residing in Malaysia      |
+      | I'm aged 18 and above                                                     |
       | I have an existing internet banking account with another bank in Malaysia |
-      | I am NOT a US person                                                      |
-      | I am NOT a tax resident in any other country                              |
-      | I am applying for an individual account                                   |
+      | I'm NOT a US person                                                       |
+      | I'm NOT a tax resident in any other country                               |
+      | I'm NOT an existing Al-Rajhi bank customer                                |
     And I close eligibility modal
     Then I am openning bank account
     And I verify application flow page is loaded
     Then I verify elements on application flow page
-      | logoLabel                       | labelFirst                             | labelSecond                                                             | signUpButton  |
-      | This shouldn't take long at all | We pride ourselves on a quick sign up. | Please ensure you have your MyKad with you before starting the process. | Let's sign up |
+      | logoLabel                                       | labelDescription                                                          | signUpButton  |
+      | You're one step closer to your new Ryse account | This shouldn't take long at all. Please ensure you have your MyKad ready! | Let's sign up |
     And I verify progress bar elements on application flow page
       | Sign up & ID verification |
       | Personal details          |
       | Create an account         |
       | Top up account            |
     When I'm processing to terms and conditions page
-    Then I verify terms and conditions page is loaded
+#    Then I verify terms and conditions page is loaded
     When I confirm all terms and conditions are met
     Then I verify eligibility page is loaded
 #    And I verify elements on eligibility page
@@ -57,6 +57,16 @@ Feature: Verify Onboarding flow for iOS
     Then I verify receive push notifications page is loaded
     And I enable push notifications
     And I allow notification in pop up
+
+    Then I verify identity page is loaded
+    And I continue to scan NRIC page
+
+    Then I verify scan NRIC page is loaded
+    And I confirm to progress to identity verification pop up
+
+    Then I verify allow camera pop up is loaded
+    And I confirm to allow camera in pop up
+
 
     Examples:
       | nameValue | validPhoneValue | passwordValue |

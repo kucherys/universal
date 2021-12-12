@@ -29,7 +29,7 @@ public class EligibilityConfirmPage extends BaseClassIos {
     }
 
     public boolean isLoaded(IOSDriver<IOSElement> driver){
-        return driver.findElement(eligibleButton).isDisplayed();
+        return driver.findElement(notEligibleButton).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName){

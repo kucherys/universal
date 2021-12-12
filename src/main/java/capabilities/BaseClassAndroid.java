@@ -16,7 +16,7 @@ public class BaseClassAndroid extends Capabilities {
     public void setupClassGlobal() throws IOException, InterruptedException {
         System.out.println("Global class setup");
         service = startServer();
-        driver = capabilitiesAndroid("digibank-0.0.13-debug.apk");
+        driver = capabilitiesAndroid("digibank-0.0.21-debug.apk");
     }
 
     @AfterClass

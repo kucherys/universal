@@ -14,7 +14,7 @@ public class PopUpNotificationSteps extends BaseClassIos {
     @Then("I verify allow notifications pop up opened")
     public void verfyallowNotificationsPopUpLoaded() {
         popUpNotificationModal = new PopUpNotificationModal(driver);
-//        Assert.assertTrue(popUpNotificationModal.isLoaded(driver));
+        Assert.assertTrue(popUpNotificationModal.isLoaded(driver));
     }
 
 

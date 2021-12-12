@@ -22,9 +22,11 @@ public class TermsConditionsPage extends BaseClassIos {
         this.driver = driver;
     }
 
+    TermsConditionsPage termsConditionsPage;
+
     public boolean isLoaded(IOSDriver<IOSElement> driver) throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        return driver.findElement(confirmButton).isDisplayed();
+        return driver.findElement(checkbox).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName){
@@ -48,8 +50,9 @@ public class TermsConditionsPage extends BaseClassIos {
     }
 
     public EligibilityConfirmPage getEligibilityConfirmPage (IOSDriver<IOSElement> driver){
-        driver.findElement(checkbox).click();
-        driver.findElement(confirmButton).click();
+        termsConditionsPage = new TermsConditionsPage(driver);
+//        driver.findElement(checkbox).click();
+//        driver.findElement(confirmButton).click();
         return new EligibilityConfirmPage(driver);
     }
 }

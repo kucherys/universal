@@ -74,8 +74,8 @@ public class AppiumiOSTest extends BaseClassIos {
         ProductCarouselPage prodCarPage = launchPage.logInToProductCarouselPage(driver);
         AppFlowPage appFlowPage = prodCarPage.getAppFlowPage(driver);
         appFlowPage.verifyTitleLabel("This shouldn't take long at all");
-        appFlowPage.verifyFirstTextLabel("We pride ourselves on a quick sign up");
-        appFlowPage.verifySecondTextLabel("Please ensure you have your MyKad with you before starting the process");
+        appFlowPage.verifyLabelDescription("We pride ourselves on a quick sign up");
+//        appFlowPage.verifySecondTextLabel("Please ensure you have your MyKad with you before starting the process");
         appFlowPage.verifyProgressBarLabels("Sign up & ID verification","Personal details",
                 "Create an account", "Top up account");
         appFlowPage.verifySignUpButton("Let's sign up");

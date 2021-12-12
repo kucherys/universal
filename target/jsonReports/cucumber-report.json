@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 63,
+        "line": 73,
         "name": "Verify Onboarding flow happy path iOS",
         "description": "",
         "id": "verify-onboarding-flow-for-ios;verify-onboarding-flow-happy-path-ios;;2",
         "after": [
           {
             "result": {
-              "duration": 48966259,
+              "duration": 66004570,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17243919897,
+              "duration": 27085664569,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 101092815,
+              "duration": 117631601,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 234996333,
+              "duration": 213792222,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +68,7 @@
                 "cells": [
                   "Log in",
                   "Welcome to",
-                  "I\u0027m new to Digibank"
+                  "I\u0027m new to Ryse"
                 ],
                 "line": 10
               }
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 365536566,
+              "duration": 407204487,
               "status": "passed"
             },
             "line": 11,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 202797935,
+              "duration": 263967231,
               "status": "passed"
             },
             "line": 12,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 317577597,
+              "duration": 285919473,
               "status": "passed"
             },
             "line": 13,
@@ -131,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 1050330104,
+              "duration": 1051533451,
               "status": "passed"
             },
             "line": 16,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 269265734,
+              "duration": 267980008,
               "status": "passed"
             },
             "line": 17,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 178833529,
+              "duration": 224329997,
               "status": "passed"
             },
             "line": 18,
@@ -167,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 293488459,
+              "duration": 256181050,
               "status": "passed"
             },
             "line": 19,
@@ -178,13 +178,13 @@
             "rows": [
               {
                 "cells": [
-                  "I am a Malaysian with a MyKad, residing in Malaysia"
+                  "I\u0027m a Malaysian citizen with a MyKad, currently residing in Malaysia"
                 ],
                 "line": 20
               },
               {
                 "cells": [
-                  "I am aged 18 and above"
+                  "I\u0027m aged 18 and above"
                 ],
                 "line": 21
               },
@@ -196,19 +196,19 @@
               },
               {
                 "cells": [
-                  "I am NOT a US person"
+                  "I\u0027m NOT a US person"
                 ],
                 "line": 23
               },
               {
                 "cells": [
-                  "I am NOT a tax resident in any other country"
+                  "I\u0027m NOT a tax resident in any other country"
                 ],
                 "line": 24
               },
               {
                 "cells": [
-                  "I am applying for an individual account"
+                  "I\u0027m NOT an existing Al-Rajhi bank customer"
                 ],
                 "line": 25
               }
@@ -217,7 +217,7 @@
           },
           {
             "result": {
-              "duration": 311810275,
+              "duration": 281642651,
               "status": "passed"
             },
             "line": 26,
@@ -229,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 713889186,
+              "duration": 641618414,
               "status": "passed"
             },
             "line": 27,
@@ -241,7 +241,7 @@
           },
           {
             "result": {
-              "duration": 146579639,
+              "duration": 188983049,
               "status": "passed"
             },
             "line": 28,
@@ -253,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 443667463,
+              "duration": 356627867,
               "status": "passed"
             },
             "line": 29,
@@ -265,17 +265,15 @@
               {
                 "cells": [
                   "logoLabel",
-                  "labelFirst",
-                  "labelSecond",
+                  "labelDescription",
                   "signUpButton"
                 ],
                 "line": 30
               },
               {
                 "cells": [
-                  "This shouldn\u0027t take long at all",
-                  "We pride ourselves on a quick sign up.",
-                  "Please ensure you have your MyKad with you before starting the process.",
+                  "You\u0027re one step closer to your new Ryse account",
+                  "This shouldn\u0027t take long at all. Please ensure you have your MyKad ready!",
                   "Let\u0027s sign up"
                 ],
                 "line": 31
@@ -285,7 +283,7 @@
           },
           {
             "result": {
-              "duration": 391786790,
+              "duration": 370427236,
               "status": "passed"
             },
             "line": 32,
@@ -323,7 +321,7 @@
           },
           {
             "result": {
-              "duration": 371622027,
+              "duration": 1058621206,
               "status": "passed"
             },
             "line": 37,
@@ -335,21 +333,15 @@
           },
           {
             "result": {
-              "duration": 1152617921,
+              "duration": 1052035,
               "status": "passed"
             },
-            "line": 38,
-            "name": "I verify terms and conditions page is loaded",
-            "match": {
-              "location": "TermsConditionsSteps.verfyTermsAndConditionsPageLoaded()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 672050077,
-              "status": "passed"
-            },
+            "comments": [
+              {
+                "line": 38,
+                "value": "#    Then I verify terms and conditions page is loaded"
+              }
+            ],
             "line": 39,
             "name": "I confirm all terms and conditions are met",
             "match": {
@@ -359,8 +351,9 @@
           },
           {
             "result": {
-              "duration": 235435498,
-              "status": "passed"
+              "duration": 10111832543,
+              "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PLPC017457\u0027, ip: \u0027fe80:0:0:0:be:8e1:75c7:2862%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: io.appium.java_client.ios.IOSDriver\nCapabilities {app: /Users/syky/Documents/TestA..., automationName: XCuiTest, browserName: , databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, launchTimeout: 500000, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 14, platform: MAC, platformName: iOS, platformVersion: 15.0, takesScreenshot: true, udid: B5182BD6-AA91-4275-AE00-846..., webStorageEnabled: false}\nSession ID: 3c87fca7-0b91-41ff-81b3-6901a35fb214\n*** Element info: {Using\u003did, value\u003dbutton.notEligible}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat pages.o1.EligibilityConfirmPage.isLoaded(EligibilityConfirmPage.java:32)\n\tat steps.EligibilityConfirmSteps.verfyEligibilityPageLoaded(EligibilityConfirmSteps.java:19)\n\tat ✽.Then I verify eligibility page is loaded(e2e/Onboarding.feature:40)\n",
+              "status": "failed"
             },
             "line": 40,
             "name": "I verify eligibility page is loaded",
@@ -371,8 +364,7 @@
           },
           {
             "result": {
-              "duration": 972545179,
-              "status": "passed"
+              "status": "skipped"
             },
             "comments": [
               {
@@ -389,8 +381,7 @@
           },
           {
             "result": {
-              "duration": 1332889395,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 43,
             "name": "I confirm I am eligible and progress to name capture page",
@@ -401,8 +392,7 @@
           },
           {
             "result": {
-              "duration": 205617288,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 44,
             "name": "I verify name capture page is loaded",
@@ -413,8 +403,7 @@
           },
           {
             "result": {
-              "duration": 1252940393,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 46,
             "name": "I enter Test value in name capture screen",
@@ -434,8 +423,7 @@
           },
           {
             "result": {
-              "duration": 590347926,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 47,
             "name": "I am processing to phone capture page",
@@ -446,8 +434,7 @@
           },
           {
             "result": {
-              "duration": 249378467,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 48,
             "name": "I verify phone capture page is loaded",
@@ -458,8 +445,7 @@
           },
           {
             "result": {
-              "duration": 2727900627,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 50,
             "name": "I enter 1122223333 phone value in phone capture screen",
@@ -479,8 +465,7 @@
           },
           {
             "result": {
-              "duration": 137604662,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 51,
             "name": "I verify status of Confirm button is enabled",
@@ -497,8 +482,7 @@
           },
           {
             "result": {
-              "duration": 301437875,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 53,
             "name": "I confirm mobile number and progress to one time password page",
@@ -509,8 +493,7 @@
           },
           {
             "result": {
-              "duration": 1161397191,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 54,
             "name": "I verify one time password page is loaded",
@@ -521,8 +504,7 @@
           },
           {
             "result": {
-              "duration": 2265362121,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 55,
             "name": "I enter 123456 password in one time password page",
@@ -542,9 +524,7 @@
           },
           {
             "result": {
-              "duration": 10137764782,
-              "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PLPC017457\u0027, ip: \u0027fe80:0:0:0:a:cbb3:2efc:f92e%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: io.appium.java_client.ios.IOSDriver\nCapabilities {app: /Users/syky/Documents/TestA..., automationName: XCuiTest, browserName: , databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, launchTimeout: 500000, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 14, platform: MAC, platformName: iOS, platformVersion: 15.0, takesScreenshot: true, udid: B5182BD6-AA91-4275-AE00-846..., webStorageEnabled: false}\nSession ID: 942b77a1-5892-4c11-8bca-248c516f6b2e\n*** Element info: {Using\u003did, value\u003dbutton.enable}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat pages.o2.PushNotifications590Page.isLoaded(PushNotifications590Page.java:22)\n\tat steps.o2.PushNotifications590Steps.verfyReceiveNotificationPageLoaded(PushNotifications590Steps.java:18)\n\tat ✽.Then I verify receive push notifications page is loaded(e2e/Onboarding.feature:57)\n",
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 57,
             "name": "I verify receive push notifications page is loaded",
@@ -572,6 +552,72 @@
             "name": "I allow notification in pop up",
             "match": {
               "location": "PopUpNotificationSteps.allowNotifications()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I verify identity page is loaded",
+            "match": {
+              "location": "VerifyId604Steps.verfyIdentityPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "I continue to scan NRIC page",
+            "match": {
+              "location": "VerifyId604Steps.continueToScanNric()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "I verify scan NRIC page is loaded",
+            "match": {
+              "location": "ScanMyKad1009Steps.verfyIdentityPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "I confirm to progress to identity verification pop up",
+            "match": {
+              "location": "ScanMyKad1009Steps.continueToAllowCamera()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "I verify allow camera pop up is loaded",
+            "match": {
+              "location": "PopUpAllowCameraSteps.verfyallowCameraPopUpLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "I confirm to allow camera in pop up",
+            "match": {
+              "location": "PopUpAllowCameraSteps.allowCamera()"
             },
             "keyword": "And "
           }

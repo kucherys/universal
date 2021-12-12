@@ -10,9 +10,8 @@ public class AppFlowPage extends BaseClassIos {
 
     By backArrow = By.id("button.back");
     By titleLabel = By.id("label.title");
-    By textFirstLable = By.id("label.firstDescription");
-    By textSecondLable = By.id("label.secondDescription");
-    By signUpButton = By.id("button.letsStart");
+    By textLableDescription = By.id("label.description");
+    By signUpButton = By.id("button.title");
     String progressSignUp = "label.title_0";
     String progressPersonalDetails = "label.title_1";
     String progressCreateAccount = "label.title_2";
@@ -40,13 +39,8 @@ public class AppFlowPage extends BaseClassIos {
         Assert.assertEquals(actualName, expectedName);
     }
 
-    public void verifyFirstTextLabel(String expectedName){
-        String actualName = driver.findElement(textFirstLable).getText();
-        Assert.assertEquals(actualName, expectedName);
-    }
-
-    public void verifySecondTextLabel(String expectedName){
-        String actualName = driver.findElement(textSecondLable).getText();
+    public void verifyLabelDescription(String expectedName){
+        String actualName = driver.findElement(textLableDescription).getText();
         Assert.assertEquals(actualName, expectedName);
     }
 
