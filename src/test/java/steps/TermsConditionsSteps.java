@@ -1,26 +1,26 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.AppFlowPage;
-import pages.o1.TermsConditionsPage;
+import pages.ios.o1.AppFlowPage;
+import pages.ios.o1.TermsConditionsPage;
 
-public class TermsConditionsSteps extends BaseClassIos {
+public class TermsConditionsSteps extends BaseClass {
 
     AppFlowPage appFlowPage;
     TermsConditionsPage termsConditionsPage;
 
     @When("I verify terms and conditions page is loaded")
     public void verfyTermsAndConditionsPageLoaded() throws InterruptedException {
-        termsConditionsPage = new TermsConditionsPage(driver);
-        Assert.assertTrue(termsConditionsPage.isLoaded(driver));
+        termsConditionsPage = new TermsConditionsPage(iosDriver);
+        Assert.assertTrue(termsConditionsPage.isLoaded(iosDriver));
     }
 
     @When("I'm processing to terms and conditions page")
     public void getTermsConditionsPage()  {
-        appFlowPage = new AppFlowPage(driver);
-        termsConditionsPage = appFlowPage.getTermsConditionsPage(driver);
+        appFlowPage = new AppFlowPage(iosDriver);
+        termsConditionsPage = appFlowPage.getTermsConditionsPage(iosDriver);
     }
 
 }

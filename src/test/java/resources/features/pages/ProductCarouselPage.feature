@@ -1,8 +1,8 @@
 Feature: Verify product carousel page functionality
 
-  @carousel
+  @carouselIOS
   Scenario: Verify elements on product carousel page
-    Given Appium server and simulator with application started
+    Given Appium server and simulator with application type iOS started
     And I verify landing page is loaded
     When I log in to product carousel page
     And I verify product carousel page is loaded
@@ -11,9 +11,9 @@ Feature: Verify product carousel page functionality
       | Open Bank Account     | Am I eligible?   | Manage your money on the go |
     And I verify elements on product carousel is spinning
 
-  @appflow
+  @appflowIOS
   Scenario: Verify elements on application flow page
-    Given Appium server and simulator with application started
+    Given Appium server and simulator with application type iOS started
     When I verify landing page is loaded
     And I log in to product carousel page
     And I verify product carousel page is loaded

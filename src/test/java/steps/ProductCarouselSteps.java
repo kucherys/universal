@@ -1,33 +1,33 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.LaunchPage;
-import pages.o1.ProductCarouselPage;
+import pages.ios.o1.IOSLaunchPage;
+import pages.ios.o1.ProductCarouselPage;
 
 import java.util.List;
 import java.util.Map;
 
 import static java.lang.Thread.sleep;
 
-public class ProductCarouselSteps extends BaseClassIos {
+public class ProductCarouselSteps extends BaseClass {
 
-    LaunchPage launchPage;
+    IOSLaunchPage iosLaunchPage;
     ProductCarouselPage prodCarPage;
 
     @When("I verify product carousel page is loaded")
     public void verfyProdCarouselPageLoaded() {
-        prodCarPage = new ProductCarouselPage(driver);
-        Assert.assertTrue(prodCarPage.isLoaded(driver));
+        prodCarPage = new ProductCarouselPage(iosDriver);
+        Assert.assertTrue(prodCarPage.isLoaded(iosDriver));
     }
 
     @When("I log in to product carousel page")
     public void getProductCarouselPage()  {
-        launchPage = new LaunchPage(driver);
-        prodCarPage = launchPage.logInToProductCarouselPage(driver);
+        iosLaunchPage = new IOSLaunchPage(iosDriver);
+        prodCarPage = iosLaunchPage.logInToProductCarouselPage(iosDriver);
     }
 
     @Then("I verify elements on product carousel page")
@@ -55,7 +55,7 @@ public class ProductCarouselSteps extends BaseClassIos {
     @Then("I verify elements on product carousel is spinning")
     public void verifyProductCarouselSpin() {
         for(int i = 0; i<3; i++) {
-            driver.findElementByAccessibilityId("pageControl").click();
+            iosDriver.findElementByAccessibilityId("pageControl").click();
         }
 
     }

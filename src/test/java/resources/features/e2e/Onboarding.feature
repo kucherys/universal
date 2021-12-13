@@ -3,7 +3,7 @@ Feature: Verify Onboarding flow for iOS
   @e2e
   Scenario Outline: Verify Onboarding flow happy path iOS
 
-    Given Appium server and simulator with application started
+    Given Appium server and simulator with application type iOS started
     And I verify landing page is loaded
     Then I verify elements on landing page
       | logInButton | logoLabel  | signUpButton    |

@@ -1,13 +1,13 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.EligibilityConfirmPage;
-import pages.o1.NameCapturePage;
-import pages.o1.TermsConditionsPage;
+import pages.ios.o1.EligibilityConfirmPage;
+import pages.ios.o1.NameCapturePage;
+import pages.ios.o1.TermsConditionsPage;
 
-public class EligibilityConfirmSteps extends BaseClassIos {
+public class EligibilityConfirmSteps extends BaseClass {
 
     TermsConditionsPage termsConditionsPage;
     EligibilityConfirmPage eligibilityConfirmPage;
@@ -15,24 +15,24 @@ public class EligibilityConfirmSteps extends BaseClassIos {
 
     @When("I verify eligibility page is loaded")
     public void verfyEligibilityPageLoaded() {
-        eligibilityConfirmPage = new EligibilityConfirmPage(driver);
-        Assert.assertTrue(eligibilityConfirmPage.isLoaded(driver));
+        eligibilityConfirmPage = new EligibilityConfirmPage(iosDriver);
+        Assert.assertTrue(eligibilityConfirmPage.isLoaded(iosDriver));
     }
 
     @When("I confirm all terms and conditions are met")
     public void getEligibilityConditionsPage()  {
-        termsConditionsPage = new TermsConditionsPage(driver);
-        eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage(driver);
+        termsConditionsPage = new TermsConditionsPage(iosDriver);
+        eligibilityConfirmPage = termsConditionsPage.getEligibilityConfirmPage(iosDriver);
     }
 
     @When("I select all eligibility criteria on eligibility page")
     public void selectAllEligibilityCheckboxesPage() throws InterruptedException {
-        eligibilityConfirmPage.selectAllEligCheckboxes(driver);
+        eligibilityConfirmPage.selectAllEligCheckboxes(iosDriver);
     }
 
     @When("I confirm I am eligible and progress to name capture page")
     public void getNamePage() throws InterruptedException {
-        eligibilityConfirmPage = new EligibilityConfirmPage(driver);
-        nameCapturePage = eligibilityConfirmPage.confirmeligibility(driver);
+        eligibilityConfirmPage = new EligibilityConfirmPage(iosDriver);
+        nameCapturePage = eligibilityConfirmPage.confirmeligibility(iosDriver);
     }
 }

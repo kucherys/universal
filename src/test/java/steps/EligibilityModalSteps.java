@@ -1,23 +1,23 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.EligibilityModalPage;
-import pages.o1.ProductCarouselPage;
+import pages.ios.o1.EligibilityModalPage;
+import pages.ios.o1.ProductCarouselPage;
 
 import java.util.List;
 
-public class EligibilityModalSteps extends BaseClassIos {
+public class EligibilityModalSteps extends BaseClass {
 
     ProductCarouselPage prodCarPage;
     EligibilityModalPage eligPage;
 
     @When("I verify Eligibility criteria modal is loaded")
     public void verfyEligibilityModalLoaded() {
-        eligPage = new EligibilityModalPage(driver);
-        Assert.assertTrue(eligPage.isLoaded(driver));
+        eligPage = new EligibilityModalPage(iosDriver);
+        Assert.assertTrue(eligPage.isLoaded(iosDriver));
     }
 
     @Then("I verify elements on Eligibility criteria modal")
@@ -28,8 +28,8 @@ public class EligibilityModalSteps extends BaseClassIos {
 
     @When("I verify if I am eligible")
     public void getEligibilityModal() {
-        prodCarPage = new ProductCarouselPage(driver);
-        eligPage = prodCarPage.openEligibilityModal(driver);
+        prodCarPage = new ProductCarouselPage(iosDriver);
+        eligPage = prodCarPage.openEligibilityModal(iosDriver);
     }
 
     @Then("I close eligibility modal")

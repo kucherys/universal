@@ -1,31 +1,31 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.AppFlowPage;
-import pages.o1.ProductCarouselPage;
+import pages.ios.o1.AppFlowPage;
+import pages.ios.o1.ProductCarouselPage;
 
 import java.util.List;
 import java.util.Map;
 
-public class AppFlowSteps extends BaseClassIos {
+public class AppFlowSteps extends BaseClass {
 
     ProductCarouselPage prodCarPage;
     AppFlowPage appFlowPage;
 
     @When("I verify application flow page is loaded")
     public void verfyAppFlowPageLoaded() {
-        appFlowPage = new AppFlowPage(driver);
-        Assert.assertTrue(appFlowPage.isLoaded(driver));
+        appFlowPage = new AppFlowPage(iosDriver);
+        Assert.assertTrue(appFlowPage.isLoaded(iosDriver));
     }
 
     @When("I am openning bank account")
     public void getAppFlowPage()  {
-        prodCarPage = new ProductCarouselPage(driver);
-        appFlowPage = prodCarPage.getAppFlowPage(driver);
+        prodCarPage = new ProductCarouselPage(iosDriver);
+        appFlowPage = prodCarPage.getAppFlowPage(iosDriver);
     }
 
     @Then("I verify elements on application flow page")

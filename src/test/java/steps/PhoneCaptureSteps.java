@@ -1,14 +1,14 @@
 package steps;
 
-import capabilities.BaseClassIos;
+import capabilities.BaseClass;
 import cucumber.api.java.en.When;
 import org.testng.Assert;
-import pages.o1.EligibilityConfirmPage;
-import pages.o1.NameCapturePage;
-import pages.o1.PhoneCapturePage;
-import pages.o2.OneTimePass609Page;
+import pages.ios.o1.EligibilityConfirmPage;
+import pages.ios.o1.NameCapturePage;
+import pages.ios.o1.PhoneCapturePage;
+import pages.ios.o2.OneTimePass609Page;
 
-public class PhoneCaptureSteps extends BaseClassIos {
+public class PhoneCaptureSteps extends BaseClass {
 
     EligibilityConfirmPage eligibilityConfirmPage;
     NameCapturePage nameCapturePage;
@@ -16,8 +16,8 @@ public class PhoneCaptureSteps extends BaseClassIos {
 
     @When("I verify phone capture page is loaded")
     public void verfyPhoneCapturePageLoaded() {
-        phoneCapturePage = new PhoneCapturePage(driver);
-        Assert.assertTrue(phoneCapturePage.isLoaded(driver));
+        phoneCapturePage = new PhoneCapturePage(iosDriver);
+        Assert.assertTrue(phoneCapturePage.isLoaded(iosDriver));
     }
 
     @When("^I enter (.+) phone value in phone capture screen$")
@@ -36,7 +36,7 @@ public class PhoneCaptureSteps extends BaseClassIos {
 
     @When("I confirm mobile number and progress to one time password page")
     public OneTimePass609Page getOnetimePassword() {
-        phoneCapturePage = new PhoneCapturePage(driver);
-        return phoneCapturePage.getOneTimePass609Page(driver);
+        phoneCapturePage = new PhoneCapturePage(iosDriver);
+        return phoneCapturePage.getOneTimePass609Page(iosDriver);
     }
 }

@@ -49,7 +49,7 @@ public class Capabilities {
     }
 
     public static AndroidDriver<AndroidElement> capabilitiesAndroid(String appName) throws IOException, InterruptedException {
-        AndroidDriver<AndroidElement> driver;
+        AndroidDriver<AndroidElement> androidDriver;
         File appDir = new File("src");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -60,14 +60,14 @@ public class Capabilities {
 
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        androidDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        androidDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        return driver;
+        return androidDriver;
     }
 
     public static IOSDriver<IOSElement> capabilitiesIos(String appName) throws IOException, InterruptedException {
-        IOSDriver<IOSElement> driver;
+        IOSDriver<IOSElement> iosDriver;
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -80,9 +80,9 @@ public class Capabilities {
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 //        cap.setCapability(MobileCapabilityType.APP, "Users/syky/Documents/TestAutomation/iOSApp/Digibank.app");
-        driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        iosDriver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
+        iosDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        return driver;
+        return iosDriver;
     }
 }
