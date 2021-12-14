@@ -37,13 +37,12 @@ public class BaseClass extends Capabilities {
     public void setupClassGlobal(String type) throws IOException, InterruptedException {
         service = startServer();
         setAppType(type);
-//        iosDriver = capabilitiesIos("Digibank.app");
         if (getAppType().equals("iOS")) {
             iosDriver = capabilitiesIos("Digibank.app");
         }
 
         else if (getAppType().equals("Android")) {
-            androidDriver = capabilitiesAndroid("digibank-0.0.24-debug.apk");
+            androidDriver = capabilitiesAndroid("digibank-0.0.26-debug.apk");
         }
     }
 

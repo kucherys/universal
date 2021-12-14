@@ -1,17 +1,16 @@
 query Documents {
   documents {
     documents {
+      id
       url
       title
       version
       type
     }
-    success
     error {
       code
       name
       message
     }
-    message
   }
 }

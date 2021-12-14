@@ -51,8 +51,8 @@ public class TermsConditionsPage extends BaseClass {
 
     public EligibilityConfirmPage getEligibilityConfirmPage (IOSDriver<IOSElement> iosDriver){
         termsConditionsPage = new TermsConditionsPage(iosDriver);
-//        driver.findElement(checkbox).click();
-//        driver.findElement(confirmButton).click();
+        iosDriver.findElement(checkbox).click();
+        iosDriver.findElement(confirmButton).click();
         return new EligibilityConfirmPage(iosDriver);
     }
 }

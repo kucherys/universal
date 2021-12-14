@@ -6,19 +6,20 @@ import io.appium.java_client.ios.IOSElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
+
 public class PopUpAllowCameraModal extends BaseClass {
 
     By title = By.id("label.title");
     String allowOption = "Allow";
     By enableButton = By.id("button.enable");
-    By maybeLaterButton = By.id("button.maybeLater");
 
     public PopUpAllowCameraModal(IOSDriver<IOSElement> iosDriver) {
         this.iosDriver = iosDriver;
     }
 
-    public boolean isLoaded(IOSDriver<IOSElement> driver) {
-        return driver.findElement(enableButton).isDisplayed();
+    public boolean isLoaded(IOSDriver<IOSElement> iosDriver) {
+        return iosDriver.findElement(enableButton).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName) {
@@ -26,7 +27,8 @@ public class PopUpAllowCameraModal extends BaseClass {
         Assert.assertEquals(expectedName, actualName);
     }
 
-    public void allowCamera() {
+    public void allowCamera() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
         iosDriver.switchTo().alert().accept();
     }
 }

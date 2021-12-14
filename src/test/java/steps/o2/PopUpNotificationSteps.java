@@ -10,11 +10,11 @@ public class PopUpNotificationSteps extends BaseClass {
 
     PopUpNotificationModal popUpNotificationModal;
 
-    @Then("I verify allow notifications pop up opened")
-    public void verfyallowNotificationsPopUpLoaded() {
-        popUpNotificationModal = new PopUpNotificationModal(iosDriver);
-        Assert.assertTrue(popUpNotificationModal.isLoaded(iosDriver));
-    }
+//    @Then("I verify allow notifications pop up opened")
+//    public void verfyallowNotificationsPopUpLoaded() {
+//        popUpNotificationModal = new PopUpNotificationModal(iosDriver);
+//        Assert.assertTrue(popUpNotificationModal.isLoaded(iosDriver));
+//    }
 
 
     @When("I allow notification in pop up")

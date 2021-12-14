@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 12,
-        "name": "Verify elements on landing page for Android",
+        "line": 85,
+        "name": "Verify Onboarding flow happy path iOS",
         "description": "",
-        "id": "verify-landing-page-functionality;verify-elements-on-landing-page-for-android",
+        "id": "verify-onboarding-flow-for-ios;verify-onboarding-flow-happy-path-ios;;2",
         "after": [
           {
             "result": {
-              "duration": 252939353,
+              "duration": 51143369,
               "status": "passed"
             },
             "match": {
@@ -19,19 +19,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 16022947615,
+              "duration": 16186638648,
               "status": "passed"
             },
-            "line": 13,
-            "name": "Appium server and simulator with application type Android started",
+            "line": 6,
+            "name": "Appium server and simulator with application type iOS started",
             "match": {
               "arguments": [
                 {
-                  "val": "Android",
+                  "val": "iOS",
                   "offset": 50
                 }
               ],
@@ -41,22 +41,22 @@
           },
           {
             "result": {
-              "duration": 537712990,
+              "duration": 109046311,
               "status": "passed"
             },
-            "line": 14,
+            "line": 7,
             "name": "I verify landing page is loaded",
             "match": {
               "location": "LandingSteps.verifyLandingPageLoaded()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 81112586,
+              "duration": 192837632,
               "status": "passed"
             },
-            "line": 15,
+            "line": 8,
             "name": "I verify elements on landing page",
             "match": {
               "location": "LandingSteps.verifyElementsLandingDataPage(DataTable)"
@@ -68,32 +68,801 @@
                   "logoLabel",
                   "signUpButton"
                 ],
-                "line": 16
+                "line": 9
               },
               {
                 "cells": [
-                  "Log In",
+                  "Log in",
                   "Welcome to",
-                  "I\u0027m new to Digibank"
+                  "I\u0027m new to Ryse"
                 ],
-                "line": 17
+                "line": 10
               }
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 318099837,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I log in to product carousel page",
+            "match": {
+              "location": "ProductCarouselSteps.getProductCarouselPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 223113227,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify product carousel page is loaded",
+            "match": {
+              "location": "ProductCarouselSteps.verfyProdCarouselPageLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 292101083,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify elements on product carousel page",
+            "match": {
+              "location": "ProductCarouselSteps.verifyProductCarouselElements(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "openBankAccountButton",
+                  "eligibilityLabel",
+                  "instructionText"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Open Bank Account",
+                  "Am I eligible?",
+                  "Manage your money on the go"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1021141009,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I verify elements on product carousel is spinning",
+            "match": {
+              "location": "ProductCarouselSteps.verifyProductCarouselSpin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 263993002,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I verify if I am eligible",
+            "match": {
+              "location": "EligibilityModalSteps.getEligibilityModal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194735984,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I verify Eligibility criteria modal is loaded",
+            "match": {
+              "location": "EligibilityModalSteps.verfyEligibilityModalLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244834145,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I verify elements on Eligibility criteria modal",
+            "match": {
+              "location": "EligibilityModalSteps.verifyEligibilityCriteriaModal(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "I\u0027m a Malaysian citizen with a MyKad, currently residing in Malaysia"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "I\u0027m aged 18 and above"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "I have an existing internet banking account with another bank in Malaysia"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "I\u0027m NOT a US person"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "I\u0027m NOT a tax resident in any other country"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "I\u0027m NOT an existing Al-Rajhi bank customer"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 277423582,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I close eligibility modal",
+            "match": {
+              "location": "EligibilityModalSteps.closeEligibilityModal()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 634128348,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am openning bank account",
+            "match": {
+              "location": "AppFlowSteps.getAppFlowPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 177409928,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify application flow page is loaded",
+            "match": {
+              "location": "AppFlowSteps.verfyAppFlowPageLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356708378,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I verify elements on application flow page",
+            "match": {
+              "location": "AppFlowSteps.verifyAppFlowElements(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "logoLabel",
+                  "labelDescription",
+                  "signUpButton"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "You\u0027re one step closer to your new Ryse account",
+                  "This shouldn\u0027t take long at all. Please ensure you have your MyKad ready!",
+                  "Let\u0027s sign up"
+                ],
+                "line": 31
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 372226334,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I verify progress bar elements on application flow page",
+            "match": {
+              "location": "AppFlowSteps.verifyProgressBarElements(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sign up \u0026 ID verification"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Personal details"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "Create an account"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "Top up account"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1038875826,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I\u0027m processing to terms and conditions page",
+            "match": {
+              "location": "TermsConditionsSteps.getTermsConditionsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1152990790,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I verify terms and conditions page is loaded",
+            "match": {
+              "location": "TermsConditionsSteps.verfyTermsAndConditionsPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 662769768,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I confirm all terms and conditions are met",
+            "match": {
+              "location": "EligibilityConfirmSteps.getEligibilityConditionsPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 230780248,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I verify eligibility page is loaded",
+            "match": {
+              "location": "EligibilityConfirmSteps.verfyEligibilityPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 954146897,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 41,
+                "value": "#    And I verify elements on eligibility page"
+              }
+            ],
+            "line": 42,
+            "name": "I select all eligibility criteria on eligibility page",
+            "match": {
+              "location": "EligibilityConfirmSteps.selectAllEligibilityCheckboxesPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1318344191,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I confirm I am eligible and progress to name capture page",
+            "match": {
+              "location": "EligibilityConfirmSteps.getNamePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 203509622,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I verify name capture page is loaded",
+            "match": {
+              "location": "NameCaptureSteps.verfyNameCapturePageLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1254593985,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I enter Test value in name capture screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 8
+                }
+              ],
+              "location": "NameCaptureSteps.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 609321347,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I am processing to phone capture page",
+            "match": {
+              "location": "NameCaptureSteps.getPhoneNumberPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244481360,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I verify phone capture page is loaded",
+            "match": {
+              "location": "PhoneCaptureSteps.verfyPhoneCapturePageLoaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2765284023,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I enter 1122223333 phone value in phone capture screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1122223333",
+                  "offset": 8
+                }
+              ],
+              "location": "PhoneCaptureSteps.enterValidPhoneNumbet(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128587778,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I verify status of Confirm button is enabled",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enabled",
+                  "offset": 37
+                }
+              ],
+              "location": "PhoneCaptureSteps.verifyConfirmButton(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 293074914,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I confirm mobile number and progress to one time password page",
+            "match": {
+              "location": "PhoneCaptureSteps.getOnetimePassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2004401110,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I verify one time password page is loaded",
+            "match": {
+              "location": "OneTimePass609Steps.verfyNameCapturePageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3294591268,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I enter 123456 password in one time password page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 8
+                }
+              ],
+              "location": "OneTimePass609Steps.enterOneTimePassword(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2345842581,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I verify receive push notifications page is loaded",
+            "match": {
+              "location": "PushNotifications590Steps.verfyReceiveNotificationPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 503466876,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I enable push notifications",
+            "match": {
+              "location": "PushNotifications590Steps.enablePushNotifications()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1046106882,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I allow notification in pop up",
+            "match": {
+              "location": "PopUpNotificationSteps.allowNotifications()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116206511,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I verify identity page is loaded",
+            "match": {
+              "location": "VerifyId604Steps.verfyIdentityPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 370487037,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I continue to scan NRIC page",
+            "match": {
+              "location": "VerifyId604Steps.continueToScanNric()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135353269,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I verify scan NRIC page is loaded",
+            "match": {
+              "location": "ScanMyKad1009Steps.verfyIdentityPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 891486551,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I am progressing to allow access camera pop up",
+            "match": {
+              "location": "ScanMyKad1009Steps.continueToAllowCamera()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3990661679,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I confirm to allow camera in pop up",
+            "match": {
+              "location": "PopUpAllowCameraSteps.allowCamera()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129874619,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I verify additional user details page is loaded",
+            "match": {
+              "location": "UserDetails112Steps.verfyReceiveNotificationPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3003680939,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I fill email value as test@test.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 22
+                }
+              ],
+              "location": "UserDetails112Steps.fillEmail(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1139452679,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I fill marital status as Single",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Single",
+                  "offset": 25
+                }
+              ],
+              "location": "UserDetails112Steps.selectMaritalStatus(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1329737559,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I fill ethnicity as Malay",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Malay",
+                  "offset": 20
+                }
+              ],
+              "location": "UserDetails112Steps.selectEthnicity(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 695909060,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I confirm filled details",
+            "match": {
+              "location": "UserDetails112Steps.confirmDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2095014846,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I verify employment details page is loaded",
+            "match": {
+              "location": "EmploymentDetailsSteps.verfyEmploymentDetailsPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 930993845,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I fill employment type as Employer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Employer",
+                  "offset": 26
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillEmploymentType(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2697048918,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I fill occupation as Architect",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Architect",
+                  "offset": 21
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillOccupation(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1540097439,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I fill employment sector as Construction",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Construction",
+                  "offset": 28
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillSector(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1370448724,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I fill Annual income as RM 120,000 and above",
+            "match": {
+              "arguments": [
+                {
+                  "val": "RM 120,000 and above",
+                  "offset": 24
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillIncome(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1496361643,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "I fill employer name as test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 24
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillEmployerName(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1274262905,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I fill employment type as Student",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Student",
+                  "offset": 26
+                }
+              ],
+              "location": "EmploymentDetailsSteps.fillEmploymentType(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2826007521,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I confirm employment details filled",
+            "match": {
+              "location": "EmploymentDetailsSteps.confirmDetails()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 11,
-            "name": "@landAndroid"
+            "line": 3,
+            "name": "@e2eIOS"
           }
         ]
       }
     ],
-    "name": "Verify landing page functionality",
+    "name": "Verify Onboarding flow for iOS",
     "description": "",
-    "id": "verify-landing-page-functionality",
+    "id": "verify-onboarding-flow-for-ios",
     "keyword": "Feature",
-    "uri": "pages/LandingPage.feature"
+    "uri": "e2e/OnboardingE2E.feature"
   }
 ]

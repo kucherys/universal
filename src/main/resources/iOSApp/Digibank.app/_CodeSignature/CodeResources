@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		2Vr1NA4HNA/9ZgbU8fbRFzgt+hE=
+		LzWRTbu9p7SxJlteMnl1+g8wm/s=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>CreateAccountRequest.query</key>
 		<data>
-		XjX4yzPtUaw6BmUNp/FQke/btPE=
+		tqlNed6QHG2djKYhPqQroxKTZtw=
 		</data>
 		<key>CreateInitialCustomerRequest.query</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>DocumentsRequest.query</key>
 		<data>
-		gs+4sAtT0uL/x6TSVZMPf9G8tvs=
+		YrhzcGl5H4PttJtqgKEkhwsQYps=
 		</data>
 		<key>Frameworks/BAMCheckout.framework/Assets.car</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/DesignSystem</key>
 		<data>
-		c+kiHj4ecTzKwDYbOb1xL51j7jI=
+		RvzMSdfgR4zuZsURLd60BY8dvxo=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		exoSKk5mlzbMc65O/5uQXuOP9Q4=
+		vcOgI3qEuoN2vjuZ0mCDw4sr78o=
 		</data>
 		<key>InfoPlist.strings</key>
 		<data>
@@ -808,9 +808,9 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>UpdateCustomerRequest.query</key>
+		<key>UpdatePersonalDetailsRequest.query</key>
 		<data>
-		XjX4yzPtUaw6BmUNp/FQke/btPE=
+		tqlNed6QHG2djKYhPqQroxKTZtw=
 		</data>
 		<key>af.lproj/Localizable-DocumentVerification.strings</key>
 		<dict>
@@ -969,7 +969,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i5Uvri6jIIuupJMtTWsPGDAIjI4=
+			DiBOZr1/ZRlxMWTrQ74Mz3ZQMA4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1528,7 +1528,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0ANYChznVT0NlQjXwFvAMUKqYaETylakgNStiS+Cb4=
+			t79lGpHiRfdmZBj72JxbLRvM1Dls2BHF3z27061pPss=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -1563,7 +1563,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nVVbJlE5ODJNDodMZ4pTiIs0a5j2/INFfKZKeUk1v94=
+			wrruVZQLEPOKlPO65SPWU+XEvDjWZWqBhH3rwLf3B/Y=
 			</data>
 		</dict>
 		<key>CreateInitialCustomerRequest.query</key>
@@ -1584,7 +1584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PcDu/6Z7sQmfAg5XlgI9XBJm4xNjkAedvkdpsAFcaC4=
+			ZTjZqrw5MKQXog8N9WLfKsaPiSY+O2QXrHTOs71UrT4=
 			</data>
 		</dict>
 		<key>Frameworks/BAMCheckout.framework/Assets.car</key>
@@ -1969,7 +1969,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5p68B4dpPiobDhKRkylaOsGX7D80scFghnw+sYHhpBo=
+			WdmjOwPMgxMUT12gX3wycFLgo88QKEPWMpBAlLkgOBA=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
@@ -2883,11 +2883,11 @@
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
-		<key>UpdateCustomerRequest.query</key>
+		<key>UpdatePersonalDetailsRequest.query</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nVVbJlE5ODJNDodMZ4pTiIs0a5j2/INFfKZKeUk1v94=
+			wrruVZQLEPOKlPO65SPWU+XEvDjWZWqBhH3rwLf3B/Y=
 			</data>
 		</dict>
 		<key>af.lproj/Localizable-DocumentVerification.strings</key>
@@ -3047,7 +3047,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6B6+GT71DbKl+WvFSG6BUo35k6/3UXEZnjWqb/NW1LA=
+			aVBcZ0PAHGbX5uiXRD3/2H9xcKg3Ibjuzx2r9LWAaa4=
 			</data>
 			<key>optional</key>
 			<true/>

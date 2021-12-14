@@ -17,7 +17,7 @@ public class ScanMyKad1009Steps extends BaseClass {
         Assert.assertTrue(scanMyKad1009Page.isLoaded(iosDriver));
     }
 
-    @When("I confirm to progress to identity verification pop up")
+    @When("I am progressing to allow access camera pop up")
     public PopUpAllowCameraModal continueToAllowCamera() {
         scanMyKad1009Page = new ScanMyKad1009Page(iosDriver);
         return scanMyKad1009Page.getCameraPopUp(iosDriver);

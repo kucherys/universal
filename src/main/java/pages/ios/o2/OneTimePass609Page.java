@@ -22,7 +22,7 @@ public class OneTimePass609Page extends BaseClass {
 
     public boolean isLoaded(IOSDriver<IOSElement> iosDriver) throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
-        return iosDriver.findElement(nextButton).isDisplayed();
+        return iosDriver.findElement(title).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName) {
@@ -41,7 +41,7 @@ public class OneTimePass609Page extends BaseClass {
     }
 
     public void fillOneTimePass(String pass) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(1);
+        TimeUnit.SECONDS.sleep(2);
         List<String> list = Arrays.asList(pass);
         for (String a : list) {
             iosDriver.findElement(passwordField).sendKeys(a);

@@ -17,8 +17,8 @@ public class PopUpNotificationModal extends BaseClass {
         this.iosDriver = iosDriver;
     }
 
-    public boolean isLoaded(IOSDriver<IOSElement> driver) {
-        return driver.findElement(enableButton).isDisplayed();
+    public boolean isLoaded(IOSDriver<IOSElement> iosDriver) {
+        return iosDriver.findElement(enableButton).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName) {

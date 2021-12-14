@@ -1,9 +1,0 @@
-mutation UpdateCustomer($customerInput: UpdateCustomerInput!) {
-  updateCustomer(customerInput: $customerInput) {
-    error {
-      code
-      name
-      message
-    }
-  }
-}
