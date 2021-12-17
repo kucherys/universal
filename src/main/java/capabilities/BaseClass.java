@@ -17,14 +17,6 @@ public class BaseClass extends Capabilities {
     public static AndroidDriver<AndroidElement> androidDriver;
     public static String appType;
 
-//    public static IOSDriver<IOSElement> getIosDriver() {
-//        return iosDriver;
-//    }
-//
-//    public static void setIosDriver(IOSDriver<IOSElement> iosDriver) {
-//        BaseClass.iosDriver = iosDriver;
-//    }
-
     public static String getAppType() {
         return appType;
     }
@@ -42,7 +34,7 @@ public class BaseClass extends Capabilities {
         }
 
         else if (getAppType().equals("Android")) {
-            androidDriver = capabilitiesAndroid("digibank-0.0.26-debug.apk");
+            androidDriver = capabilitiesAndroid("digibank-0.0.29-debug.apk");
         }
     }
 

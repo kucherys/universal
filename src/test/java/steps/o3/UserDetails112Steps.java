@@ -37,7 +37,7 @@ public class UserDetails112Steps extends BaseClass {
         userDetails112Page.fillEthnicityField(ethnicity);
     }
 
-    @When("I confirm filled details")
+    @When("I confirm user details filled")
     public EmplType114Page confirmDetails() {
         userDetails112Page = new UserDetails112Page(iosDriver);
         return userDetails112Page.getEmploymentType114Page(iosDriver);

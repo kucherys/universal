@@ -1,0 +1,33 @@
+package pages.ios.o3;
+
+import capabilities.BaseClass;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
+import org.openqa.selenium.By;
+
+public class ReviewDetails116Page extends BaseClass {
+
+    By title = By.id("label.title");
+    By personalEditButton = By.id("button.header.edit");
+    By emailEdit = By.id("textfield.email");
+    By submitAppButton = By.id("button.submit");
+
+
+    public ReviewDetails116Page(IOSDriver<IOSElement> iosDriver) {
+        this.iosDriver = iosDriver;
+    }
+
+    public boolean isLoaded(IOSDriver<IOSElement> iosDriver) {
+        return iosDriver.findElement(submitAppButton).isDisplayed();
+    }
+
+    public void editPersonalDetail(String detailToEdit) {
+        iosDriver.findElement(personalEditButton).click();
+
+    }
+
+    public CheckingDetails1530Page submitApplication (IOSDriver<IOSElement> iosDriver){
+        iosDriver.findElement(submitAppButton).click();
+        return new CheckingDetails1530Page(iosDriver);
+    }
+}

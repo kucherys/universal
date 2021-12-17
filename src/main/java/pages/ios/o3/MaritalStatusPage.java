@@ -19,7 +19,6 @@ public class MaritalStatusPage extends BaseClass {
             case "Single":
                 iosDriver.findElement(single).click();
             break;
-
             case "Married":
                 iosDriver.findElement(married).click();
             break;

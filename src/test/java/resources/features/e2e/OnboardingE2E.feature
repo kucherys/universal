@@ -69,16 +69,32 @@ Feature: Verify Onboarding flow for iOS
     And I fill email value as test@test.com
     And I fill marital status as Single
     And I fill ethnicity as Malay
-    And I confirm filled details
+    And I confirm user details filled
 
     Then I verify employment details page is loaded
-    Then I fill employment type as Employer
-    And I fill occupation as Architect
-    And I fill employment sector as Construction
-    And I fill Annual income as RM 120,000 and above
-    And I fill employer name as test
+    Then I fill employment type as Student
+#    And I fill occupation as Architect
+#    And I fill employment sector as Construction
+#    And I fill Annual income as RM 120,000 and above
+#    And I fill employer name as test
     And I confirm employment details filled
 
+    Then I verify reasons for account page is loaded
+    And I select checkbox option Saving
+    And I confirm reasons for account filled
+
+    And I verify review details page is loaded
+#    And I edit personal details with value test@gft.com
+    And I submit application from review details screen
+
+    When I verify progress account creation page is loaded
+    Then I create my account
+
+    When I verify Set username page is loaded
+    Then I enter valid username with value <userNameValue>
+#    And I submit user name by button Next
+
+
     Examples:
-      | nameValue | validPhoneValue | passwordValue |
-      | Test      | 1122223333      | 123456        |
+      | nameValue | validPhoneValue | passwordValue | userNameValue |
+      | Test      | 1122223333      | 123456        | testUser1     |

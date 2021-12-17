@@ -43,7 +43,7 @@ public class Capabilities {
         return isServerRunning;
     }
 
-    public static void StartEmulator() throws IOException, InterruptedException {
+    public static void StartAndroidEmulator() throws IOException, InterruptedException {
         Runtime.getRuntime().exec(System.getProperty("user.dir") + "//src//main//resources//startEmulator.sh");
         Thread.sleep(6000);
     }
@@ -53,7 +53,7 @@ public class Capabilities {
         File appDir = new File("src");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
-        StartEmulator();
+        StartAndroidEmulator();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidEmulator");
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
@@ -71,8 +71,8 @@ public class Capabilities {
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
-        //StartEmulator();
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
+
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 12");
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
         cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 500000);
