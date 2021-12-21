@@ -8,10 +8,11 @@ import org.openqa.selenium.By;
 public class ReviewDetails116Page extends BaseClass {
 
     By title = By.id("label.title");
-    By personalEditButton = By.id("button.header.edit");
+    By personalEditButton = By.id("button.edit.additional_details");
     By emailEdit = By.id("textfield.email");
     By submitAppButton = By.id("button.submit");
 
+    UserDetails112Page userDetails112Page;
 
     public ReviewDetails116Page(IOSDriver<IOSElement> iosDriver) {
         this.iosDriver = iosDriver;
@@ -23,7 +24,9 @@ public class ReviewDetails116Page extends BaseClass {
 
     public void editPersonalDetail(String detailToEdit) {
         iosDriver.findElement(personalEditButton).click();
-
+        userDetails112Page = new UserDetails112Page(iosDriver);
+        userDetails112Page.updateEmail(detailToEdit);
+        userDetails112Page.closeModal();
     }
 
     public CheckingDetails1530Page submitApplication (IOSDriver<IOSElement> iosDriver){

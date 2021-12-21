@@ -12,14 +12,14 @@ public class SetUserName586Page extends BaseClass {
     By title = By.id("label.title");
     By usernameField = By.id("textfield.username");
 
-    By nextButton = By.id("button.submit");
+    By nextButton = By.id("button.submitKeyboard");
 
     public SetUserName586Page(IOSDriver<IOSElement> iosDriver) {
         this.iosDriver = iosDriver;
     }
 
     public boolean isLoaded(IOSDriver<IOSElement> iosDriver) {
-        return iosDriver.findElement(nextButton).isDisplayed();
+        return iosDriver.findElement(title).isDisplayed();
     }
 
     public void verifyTitleLabel(String expectedName) {

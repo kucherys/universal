@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		YkeH+JWb4s9CCt9eC0yul75ogjY=
+		YYDsMq9z6+3t1ZSqrRMj95RqGx0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
 		U0x8EM0781fCPb62BbZIXKeDlZ4=
+		</data>
+		<key>CheckUsernameUniquenessRequest.query</key>
+		<data>
+		8y5X4HoulRMF7StbfaVq22FnL+o=
 		</data>
 		<key>ConfirmPhoneNumberRequest.query</key>
 		<data>
@@ -266,11 +270,11 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/DesignSystem</key>
 		<data>
-		iRelIIAOjFigfa5D3nLYKRe2I90=
+		vbgLK6zP8eX9aXyNi7yHW6hqvDI=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<data>
-		PH52xupTE4B66xIN/OgpIXxSNVw=
+		BfBV94eJDDlRHoSXurc177pylWU=
 		</data>
 		<key>Frameworks/DesignSystem.framework/Poppins-Black.ttf</key>
 		<data>
@@ -346,7 +350,7 @@
 		</data>
 		<key>Frameworks/DesignSystem.framework/_CodeSignature/CodeResources</key>
 		<data>
-		zRrTn5MGQnlbEAOa9PqdYdb4/eA=
+		qG7KEpnGSsVF9q4geHAeHiQbS6Y=
 		</data>
 		<key>Frameworks/DocumentVerification.framework/Assets.car</key>
 		<data>
@@ -770,7 +774,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x6feN9Gr92nJRhTkz8DctwTrXwU=
+		YS8TE6gnJpfZ7BHKQnNLVq40eqk=
 		</data>
 		<key>InfoPlist.strings</key>
 		<data>
@@ -782,7 +786,7 @@
 		</data>
 		<key>PhoneNumberKitResources.bundle/Info.plist</key>
 		<data>
-		KERMxqkFlEO3PNO4Fmns9u+ArKE=
+		lyrS2h/x5bGn7Jnk5YTwZuJIltc=
 		</data>
 		<key>PhoneNumberKitResources.bundle/PhoneNumberMetadata.json</key>
 		<data>
@@ -790,7 +794,7 @@
 		</data>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		mTA4N7rOXiFSOFv0GtkWgdWzlCg=
+		SGRNHVAVCx+0CtX/Bjv9ormx23g=
 		</data>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -798,7 +802,7 @@
 		</data>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		Q/Zdhzi/y02OIvUp4iAqj1KMsTw=
+		7939UxOwxBq9bGF/JrPfNN+eiFk=
 		</data>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -973,7 +977,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h7b7enh11Lr4uHjqew2X27MtIm8=
+			mJpCguohXjlITM6BJzkKcwS5Jcc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1532,7 +1536,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v5BZB2jjQf7nXs1JjGWOC4ersew6Wb+Dj8i2Rm0YIPY=
+			G6sImzYz2/tTNvA2PLikz7/ZPKIzb5XKg6hP9CNoXkk=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -1554,6 +1558,13 @@
 			<key>hash2</key>
 			<data>
 			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
+			</data>
+		</dict>
+		<key>CheckUsernameUniquenessRequest.query</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z/t/W60fzQvFSe1liOyJbifvqFfOyLcuoIZ7bniZIUU=
 			</data>
 		</dict>
 		<key>ConfirmPhoneNumberRequest.query</key>
@@ -1980,14 +1991,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZM4LPUVU2hBn0LumdAKp2Q27+Cn/5+pE99474cFb+08=
+			z3C1ZD2i7N5KWHf+dZpoH2C46Nxmf2L3e7kjWl5hKUE=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/OOGCPdAXttEiEBksRPenrP8/YwlHSGLVdwdIDNKoU=
+			JcUkrRfWdtVNgOtQOoA1fOThKnupvagipBJ9nnPcqGM=
 			</data>
 		</dict>
 		<key>Frameworks/DesignSystem.framework/Poppins-Black.ttf</key>
@@ -2120,7 +2131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jqf2v5w007/0U244npR3IpMJYR7jldyQC4CDUFWrwf8=
+			bwVWkMpcVNtQd5uZvhejP4ZQtJfpLNsCzZ4HbFYiBN8=
 			</data>
 		</dict>
 		<key>Frameworks/DocumentVerification.framework/Assets.car</key>
@@ -2849,7 +2860,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X8dACNax6M/tdvLOoZsGJ8h6piT5emJOLzQgXGmtSCg=
+			cirBcQCeLjGfHbUQhoLzcd/KBqYM1unuRmFPau4c964=
 			</data>
 		</dict>
 		<key>PhoneNumberKitResources.bundle/PhoneNumberMetadata.json</key>
@@ -2863,7 +2874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qg7zoYDmPGxm1RT/E16AHJJt/FA0K9TC9n6QHF+8xW8=
+			CyXvoN7RX59Z/FP+As4a88Tx/0uYRbQmgiSsovlylTc=
 			</data>
 		</dict>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeRequirements</key>
@@ -2877,7 +2888,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2IezR6niIqiqlF9e1cmUzXLZjDDlQNBEFP3hOgheXr8=
+			wPSWNExR9JPPCNcaMEFEPPU7Eyfth7RWsmpHb1sFB2Q=
 			</data>
 		</dict>
 		<key>PhoneNumberKitResources.bundle/_CodeSignature/CodeResources</key>
@@ -3058,7 +3069,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vR/krfVSaUcsqsjNNmiQEIfK8UzdFlKJWJGvaFCYirY=
+			BbntRXYKEsILHmsjd80YQqoztqtOvqe+D7r4BiZ8FBc=
 			</data>
 			<key>optional</key>
 			<true/>

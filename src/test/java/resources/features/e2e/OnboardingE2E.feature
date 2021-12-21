@@ -65,6 +65,13 @@ Feature: Verify Onboarding flow for iOS
     And I am progressing to allow access camera pop up
     And I confirm to allow camera in pop up
 
+    Then I verify progress page with status 2 is loaded
+    And I verify elements on application progress page
+      | logoLabel                         |
+      | Great! Moving on to the next step |
+    And I progress to create account phase and filling user details
+
+
     Then I verify additional user details page is loaded
     And I fill email value as test@test.com
     And I fill marital status as Single
@@ -92,9 +99,13 @@ Feature: Verify Onboarding flow for iOS
 
     When I verify Set username page is loaded
     Then I enter valid username with value <userNameValue>
-#    And I submit user name by button Next
+    And I submit user name by button Next
+
+    When I verify Set secure word page is loaded
+    And I enter secure word with value <secureWordValue>
+    And I submit secure word by button Next
 
 
     Examples:
-      | nameValue | validPhoneValue | passwordValue | userNameValue |
-      | Test      | 1122223333      | 123456        | testUser1     |
+      | nameValue | validPhoneValue | passwordValue | userNameValue | secureWordValue |
+      | Test      | 1122223333      | 123456        | test123A      | word123A        |

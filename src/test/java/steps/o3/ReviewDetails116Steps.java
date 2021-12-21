@@ -21,7 +21,6 @@ public class ReviewDetails116Steps extends BaseClass {
     public void editPersonal(String detailsToEdit) {
         reviewDetails116Page = new ReviewDetails116Page(iosDriver);
         reviewDetails116Page.editPersonalDetail(detailsToEdit);
-
     }
 
     @When("I submit application from review details screen")

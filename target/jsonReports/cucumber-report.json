@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 100,
+        "line": 111,
         "name": "Verify Onboarding flow happy path iOS",
         "description": "",
         "id": "verify-onboarding-flow-for-ios;verify-onboarding-flow-happy-path-ios;;2",
         "after": [
           {
             "result": {
-              "duration": 88002,
+              "duration": 60115056,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9679906035,
+              "duration": 18893824790,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 110492642,
+              "duration": 105443448,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 234633883,
+              "duration": 232608221,
               "status": "passed"
             },
             "line": 8,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 330932296,
+              "duration": 354071462,
               "status": "passed"
             },
             "line": 11,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 231969087,
+              "duration": 204051844,
               "status": "passed"
             },
             "line": 12,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 309693498,
+              "duration": 297747030,
               "status": "passed"
             },
             "line": 13,
@@ -137,7 +137,7 @@
           },
           {
             "result": {
-              "duration": 999148815,
+              "duration": 1037872403,
               "status": "passed"
             },
             "line": 16,
@@ -149,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 238281324,
+              "duration": 269386739,
               "status": "passed"
             },
             "line": 17,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 181008013,
+              "duration": 188223718,
               "status": "passed"
             },
             "line": 18,
@@ -173,7 +173,7 @@
           },
           {
             "result": {
-              "duration": 263023987,
+              "duration": 255604446,
               "status": "passed"
             },
             "line": 19,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 257262534,
+              "duration": 269971503,
               "status": "passed"
             },
             "line": 26,
@@ -235,7 +235,7 @@
           },
           {
             "result": {
-              "duration": 627111651,
+              "duration": 625228445,
               "status": "passed"
             },
             "line": 27,
@@ -247,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 175396689,
+              "duration": 183864295,
               "status": "passed"
             },
             "line": 28,
@@ -259,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 408700126,
+              "duration": 381968426,
               "status": "passed"
             },
             "line": 29,
@@ -289,7 +289,7 @@
           },
           {
             "result": {
-              "duration": 390039344,
+              "duration": 394517940,
               "status": "passed"
             },
             "line": 32,
@@ -327,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 949457314,
+              "duration": 986237408,
               "status": "passed"
             },
             "line": 37,
@@ -339,7 +339,7 @@
           },
           {
             "result": {
-              "duration": 1165647242,
+              "duration": 1174063641,
               "status": "passed"
             },
             "line": 38,
@@ -351,7 +351,7 @@
           },
           {
             "result": {
-              "duration": 612517635,
+              "duration": 629231531,
               "status": "passed"
             },
             "line": 39,
@@ -363,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 225699860,
+              "duration": 235089303,
               "status": "passed"
             },
             "line": 40,
@@ -375,7 +375,7 @@
           },
           {
             "result": {
-              "duration": 931604545,
+              "duration": 932051514,
               "status": "passed"
             },
             "comments": [
@@ -393,7 +393,7 @@
           },
           {
             "result": {
-              "duration": 1308147205,
+              "duration": 1328474797,
               "status": "passed"
             },
             "line": 43,
@@ -405,7 +405,7 @@
           },
           {
             "result": {
-              "duration": 198861807,
+              "duration": 217665537,
               "status": "passed"
             },
             "line": 44,
@@ -417,7 +417,7 @@
           },
           {
             "result": {
-              "duration": 619739042,
+              "duration": 632178549,
               "status": "passed"
             },
             "line": 46,
@@ -438,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 552001872,
+              "duration": 556790502,
               "status": "passed"
             },
             "line": 47,
@@ -450,7 +450,7 @@
           },
           {
             "result": {
-              "duration": 222434054,
+              "duration": 231481079,
               "status": "passed"
             },
             "line": 48,
@@ -462,7 +462,7 @@
           },
           {
             "result": {
-              "duration": 939252274,
+              "duration": 963246401,
               "status": "passed"
             },
             "line": 50,
@@ -483,7 +483,7 @@
           },
           {
             "result": {
-              "duration": 130223306,
+              "duration": 143713684,
               "status": "passed"
             },
             "line": 51,
@@ -501,7 +501,7 @@
           },
           {
             "result": {
-              "duration": 264315076,
+              "duration": 271399248,
               "status": "passed"
             },
             "line": 53,
@@ -513,7 +513,7 @@
           },
           {
             "result": {
-              "duration": 2002511973,
+              "duration": 2004851151,
               "status": "passed"
             },
             "line": 54,
@@ -525,7 +525,7 @@
           },
           {
             "result": {
-              "duration": 2684898421,
+              "duration": 2730685706,
               "status": "passed"
             },
             "line": 55,
@@ -546,7 +546,7 @@
           },
           {
             "result": {
-              "duration": 2361945104,
+              "duration": 2368032349,
               "status": "passed"
             },
             "line": 57,
@@ -558,7 +558,7 @@
           },
           {
             "result": {
-              "duration": 419268750,
+              "duration": 365245111,
               "status": "passed"
             },
             "line": 58,
@@ -570,7 +570,7 @@
           },
           {
             "result": {
-              "duration": 1031148738,
+              "duration": 1018863057,
               "status": "passed"
             },
             "line": 59,
@@ -582,7 +582,7 @@
           },
           {
             "result": {
-              "duration": 128896318,
+              "duration": 120712122,
               "status": "passed"
             },
             "line": 61,
@@ -594,7 +594,7 @@
           },
           {
             "result": {
-              "duration": 356731301,
+              "duration": 355316760,
               "status": "passed"
             },
             "line": 62,
@@ -606,7 +606,7 @@
           },
           {
             "result": {
-              "duration": 137062609,
+              "duration": 130896356,
               "status": "passed"
             },
             "line": 64,
@@ -618,7 +618,7 @@
           },
           {
             "result": {
-              "duration": 487012994,
+              "duration": 488566249,
               "status": "passed"
             },
             "line": 65,
@@ -630,7 +630,7 @@
           },
           {
             "result": {
-              "duration": 3951906790,
+              "duration": 4020508813,
               "status": "passed"
             },
             "line": 66,
@@ -642,10 +642,60 @@
           },
           {
             "result": {
-              "duration": 139020198,
+              "duration": 2131425941,
               "status": "passed"
             },
             "line": 68,
+            "name": "I verify progress page with status 2 is loaded",
+            "match": {
+              "location": "Progress270Steps.verfyProgressPageLoaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105607684,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I verify elements on application progress page",
+            "match": {
+              "location": "Progress270Steps.verifyElements(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "logoLabel"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "Great! Moving on to the next step"
+                ],
+                "line": 71
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 289983615,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I progress to create account phase and filling user details",
+            "match": {
+              "location": "Progress270Steps.continueToNextStage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159644693,
+              "status": "passed"
+            },
+            "line": 75,
             "name": "I verify additional user details page is loaded",
             "match": {
               "location": "UserDetails112Steps.verfyReceiveNotificationPageLoaded()"
@@ -654,10 +704,10 @@
           },
           {
             "result": {
-              "duration": 652830295,
+              "duration": 909900371,
               "status": "passed"
             },
-            "line": 69,
+            "line": 76,
             "name": "I fill email value as test@test.com",
             "match": {
               "arguments": [
@@ -672,10 +722,10 @@
           },
           {
             "result": {
-              "duration": 1007006896,
+              "duration": 1032085647,
               "status": "passed"
             },
-            "line": 70,
+            "line": 77,
             "name": "I fill marital status as Single",
             "match": {
               "arguments": [
@@ -690,10 +740,10 @@
           },
           {
             "result": {
-              "duration": 1289706946,
+              "duration": 1311529944,
               "status": "passed"
             },
-            "line": 71,
+            "line": 78,
             "name": "I fill ethnicity as Malay",
             "match": {
               "arguments": [
@@ -708,10 +758,10 @@
           },
           {
             "result": {
-              "duration": 667230103,
+              "duration": 684408576,
               "status": "passed"
             },
-            "line": 72,
+            "line": 79,
             "name": "I confirm user details filled",
             "match": {
               "location": "UserDetails112Steps.confirmDetails()"
@@ -720,10 +770,10 @@
           },
           {
             "result": {
-              "duration": 2110672923,
+              "duration": 2111714355,
               "status": "passed"
             },
-            "line": 74,
+            "line": 81,
             "name": "I verify employment details page is loaded",
             "match": {
               "location": "EmploymentDetailsSteps.verfyEmploymentDetailsPageLoaded()"
@@ -732,10 +782,10 @@
           },
           {
             "result": {
-              "duration": 913573128,
+              "duration": 920968105,
               "status": "passed"
             },
-            "line": 75,
+            "line": 82,
             "name": "I fill employment type as Student",
             "match": {
               "arguments": [
@@ -750,28 +800,28 @@
           },
           {
             "result": {
-              "duration": 677585071,
+              "duration": 681879256,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 76,
+                "line": 83,
                 "value": "#    And I fill occupation as Architect"
               },
               {
-                "line": 77,
+                "line": 84,
                 "value": "#    And I fill employment sector as Construction"
               },
               {
-                "line": 78,
+                "line": 85,
                 "value": "#    And I fill Annual income as RM 120,000 and above"
               },
               {
-                "line": 79,
+                "line": 86,
                 "value": "#    And I fill employer name as test"
               }
             ],
-            "line": 80,
+            "line": 87,
             "name": "I confirm employment details filled",
             "match": {
               "location": "EmploymentDetailsSteps.confirmDetails()"
@@ -780,10 +830,10 @@
           },
           {
             "result": {
-              "duration": 171027214,
+              "duration": 168451010,
               "status": "passed"
             },
-            "line": 82,
+            "line": 89,
             "name": "I verify reasons for account page is loaded",
             "match": {
               "location": "Reason115Steps.verfyReceiveNotificationPageLoaded()"
@@ -792,10 +842,10 @@
           },
           {
             "result": {
-              "duration": 455662912,
+              "duration": 463605606,
               "status": "passed"
             },
-            "line": 83,
+            "line": 90,
             "name": "I select checkbox option Saving",
             "match": {
               "arguments": [
@@ -810,10 +860,10 @@
           },
           {
             "result": {
-              "duration": 346979938,
+              "duration": 353841355,
               "status": "passed"
             },
-            "line": 84,
+            "line": 91,
             "name": "I confirm reasons for account filled",
             "match": {
               "location": "Reason115Steps.confirmDetails()"
@@ -822,10 +872,10 @@
           },
           {
             "result": {
-              "duration": 230437847,
+              "duration": 253801095,
               "status": "passed"
             },
-            "line": 86,
+            "line": 93,
             "name": "I verify review details page is loaded",
             "match": {
               "location": "ReviewDetails116Steps.verfyReviewDetailsPageLoaded()"
@@ -834,16 +884,16 @@
           },
           {
             "result": {
-              "duration": 385668273,
+              "duration": 377765261,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 87,
+                "line": 94,
                 "value": "#    And I edit personal details with value test@gft.com"
               }
             ],
-            "line": 88,
+            "line": 95,
             "name": "I submit application from review details screen",
             "match": {
               "location": "ReviewDetails116Steps.confirmDetails()"
@@ -852,10 +902,10 @@
           },
           {
             "result": {
-              "duration": 2473057589,
+              "duration": 2492068125,
               "status": "passed"
             },
-            "line": 90,
+            "line": 97,
             "name": "I verify progress account creation page is loaded",
             "match": {
               "location": "CheckingDetails1530Steps.verfyReviewDetailsPageLoaded()"
@@ -864,10 +914,10 @@
           },
           {
             "result": {
-              "duration": 1925250738,
+              "duration": 2085865480,
               "status": "passed"
             },
-            "line": 91,
+            "line": 98,
             "name": "I create my account",
             "match": {
               "location": "CheckingDetails1530Steps.confirmDetails()"
@@ -876,10 +926,10 @@
           },
           {
             "result": {
-              "duration": 110282735,
+              "duration": 120180485,
               "status": "passed"
             },
-            "line": 93,
+            "line": 100,
             "name": "I verify Set username page is loaded",
             "match": {
               "location": "SetUsername586Steps.verfyReviewDetailsPageLoaded()"
@@ -888,15 +938,15 @@
           },
           {
             "result": {
-              "duration": 537894306,
+              "duration": 543851347,
               "status": "passed"
             },
-            "line": 94,
-            "name": "I enter valid username with value testUser1",
+            "line": 101,
+            "name": "I enter valid username with value test123A",
             "match": {
               "arguments": [
                 {
-                  "val": "testUser1",
+                  "val": "test123A",
                   "offset": 34
                 }
               ],
@@ -906,6 +956,63 @@
               3
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 394208186,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "I submit user name by button Next",
+            "match": {
+              "location": "SetUsername586Steps.progressToSecureWordScreen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46754,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I verify Set secure word page is loaded",
+            "match": {
+              "location": "SetSecureWord275Steps.verfySecureWordPageLoaded()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3073559522,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I enter secure word with value word123A",
+            "match": {
+              "arguments": [
+                {
+                  "val": "word123A",
+                  "offset": 31
+                }
+              ],
+              "location": "SetSecureWord275Steps.createUsername(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 449961257,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "I submit secure word by button Next",
+            "match": {
+              "location": "SetSecureWord275Steps.progressToSecureWordScreen()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

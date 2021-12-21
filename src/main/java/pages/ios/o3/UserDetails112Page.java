@@ -13,6 +13,8 @@ public class UserDetails112Page extends BaseClass {
     By maritalStatusField = By.id("textfield.marital_status");
     By ethnicityField = By.id("textfield.ethnicity");
     By confirmButton = By.id("button.confirm");
+    By closeButton = By.id("button.close");
+
 
 
     public UserDetails112Page(IOSDriver<IOSElement> iosDriver) {
@@ -30,6 +32,15 @@ public class UserDetails112Page extends BaseClass {
 
     public void fillEmail(String emailValue) {
         iosDriver.findElement(emailField).sendKeys(emailValue);
+    }
+
+    public void updateEmail(String emailValue) {
+        iosDriver.findElement(emailField).clear();
+        iosDriver.findElement(emailField).sendKeys(emailValue);
+    }
+
+    public void closeModal() {
+        iosDriver.findElement(closeButton).click();
     }
 
     public UserDetails112Page fillMaritalStatus(String maritalStatus) {
