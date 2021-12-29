@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="tests.ios.AppiumiOSTest">
+        <methods>
+          <include name="verify_capture_name_page"/>
+          <include name="verify_app_flow_page"/>
+          <include name="cleanUpGlobal"/>
+          <include name="verify_product_eligibility_modal"/>
+          <include name="setupClassGlobal"/>
+          <include name="verify_launching_page"/>
+          <include name="verify_terms_conditions_page"/>
+          <include name="verify_capture_phone_page"/>
+          <include name="verify_eligbility_page"/>
+          <include name="setupGlobal"/>
+          <include name="cleanUpClassGlobal"/>
+          <include name="verify_product_carousel_page"/>
+        </methods>
+      </class> <!-- tests.ios.AppiumiOSTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

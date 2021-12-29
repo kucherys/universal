@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="8" failed="0" ignored="0" total="8" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="28" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="28" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+      <class name="tests.ios.AppiumiOSTest">
+        <test-method status="FAIL" signature="setupClassGlobal(java.lang.String)[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupClassGlobal" is-config="true" duration-ms="-1640700898047" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClassGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898057" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="verify_app_flow_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_app_flow_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_app_flow_page -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898059" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898060" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898060" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="verify_capture_name_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_capture_name_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_capture_name_page -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898061" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898061" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="verify_capture_phone_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_capture_phone_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_capture_phone_page -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898062" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898062" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="verify_eligbility_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_eligbility_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_eligbility_page -->
+        <test-method status="SKIP" signature="verify_launching_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_launching_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_launching_page -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898062" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898062" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="verify_product_carousel_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_product_carousel_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_carousel_page -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898063" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898063" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="verify_terms_conditions_page()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_terms_conditions_page" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_terms_conditions_page -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898064" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="verify_product_eligibility_modal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="verify_product_eligibility_modal" duration-ms="0" started-at="2021-12-28T15:14:58 CET" finished-at="2021-12-28T15:14:58 CET">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeClass annotated setupClassGlobal.
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:441)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:712)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_product_eligibility_modal -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898064" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="setupGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="setupGlobal" is-config="true" duration-ms="-1640700898064" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupGlobal -->
+        <test-method status="SKIP" signature="cleanUpGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpGlobal" is-config="true" duration-ms="-1640700898064" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpGlobal -->
+        <test-method status="SKIP" signature="cleanUpClassGlobal()[pri:0, instance:tests.ios.AppiumiOSTest@64f6106c]" name="cleanUpClassGlobal" is-config="true" duration-ms="-1640700898065" started-at="2021-12-28T15:14:58 CET" finished-at="1970-01-01T01:00:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUpClassGlobal -->
+      </class> <!-- tests.ios.AppiumiOSTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

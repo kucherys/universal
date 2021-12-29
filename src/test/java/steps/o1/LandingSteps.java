@@ -1,11 +1,11 @@
 package steps.o1;
 
 import capabilities.BaseClass;
-import cucumber.api.DataTable;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.DataTable;
 import org.testng.Assert;
 import pages.android.o1.AndroidLaunchPage;
 import pages.ios.o1.IOSLaunchPage;
