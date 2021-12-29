@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 311916599,
+              "duration": 302783665,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20983759460,
+              "duration": 13269969446,
               "status": "passed"
             },
             "line": 13,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 486387783,
+              "duration": 548950570,
               "status": "passed"
             },
             "line": 14,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 130205377,
+              "duration": 96505954,
               "status": "passed"
             },
             "line": 15,
@@ -80,6 +80,36 @@
               }
             ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31989102,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I print login button name",
+            "match": {
+              "location": "LandingSteps.printButtonName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66474,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I confirm tests completed with result TEST PASSED",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TEST PASSED",
+                  "offset": 38
+                }
+              ],
+              "location": "LandingSteps.confitmTests(String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

@@ -58,9 +58,21 @@ public class LandingSteps extends BaseClass {
         }
     }
 
+    @Then("^I confirm tests completed with result (.+)$")
+    public void confitmTests(String result) {
+        System.out.println("CUCUMBER TESTS PASSED WITH RESULT: " + result);
+
+    }
+
+    @Then("I print login button name")
+    public void printButtonName() {
+        System.out.println("BUTTON NAME IS : " + androidLaunchPage.getLogInButtonName());
+
+    }
+
     @After
     public void stopAppiumServer(){
-        System.out.println("Stop appium server");
+        System.out.println("Stop appium server in INITIALIZATION class");
         service.stop();
     }
 }

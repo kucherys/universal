@@ -1,5 +1,6 @@
 package capabilities;
 
+import cucumber.api.java.After;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.ios.IOSDriver;
@@ -57,6 +58,12 @@ public class BaseClass extends Capabilities {
     public String removeFirstLastChar(String str) {
         return str = str.substring(1, str.length() - 1);
     }
+
+//    @After
+//    public void stopAppiumServer(){
+//        System.out.println("Stop appium server in BASE class");
+//        service.stop();
+//    }
 
 
 }
