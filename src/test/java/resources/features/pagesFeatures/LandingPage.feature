@@ -18,6 +18,7 @@ Feature: Verify landing page functionality
     And I print login button name
     And I confirm tests completed with result TEST PASSED
 
+
   @landAndroid
   Scenario: Verify elements on landing page for Android negative
     Given Appium server and simulator with application type Android started
