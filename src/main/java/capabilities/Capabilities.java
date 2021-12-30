@@ -67,7 +67,7 @@ public class Capabilities {
         return androidDriver;
     }
 
-    public static IOSDriver<IOSElement> capabilitiesIos(String appName) throws IOException, InterruptedException {
+    public static IOSDriver<IOSElement> capabilitiiesIos(String appName) throws IOException, InterruptedException {
         IOSDriver<IOSElement> iosDriver;
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);
