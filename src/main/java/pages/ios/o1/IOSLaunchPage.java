@@ -40,4 +40,9 @@ public class IOSLaunchPage extends BaseClass {
         return new ProductCarouselPage(driver);
     }
 
+    public String getLogInButtonName(){
+        return iosDriver.findElement(logInButton).getText();
+
+    }
+
 }

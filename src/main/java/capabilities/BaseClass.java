@@ -31,7 +31,7 @@ public class BaseClass extends Capabilities {
         service = startServer();
         setAppType(type);
         if (getAppType().equals("iOS")) {
-            iosDriver = capabilitiesIos("Digibank.app");
+            iosDriver = capabilitiesIosRefactor("Digibank.app");
         }
 
         else if (getAppType().equals("Android")) {

@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -53,7 +54,7 @@ public class Capabilities {
         File appDir = new File("src");
         File app = new File(appDir, appName);
         DesiredCapabilities cap = new DesiredCapabilities();
-//        StartAndroidEmulator();
+        StartAndroidEmulator();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "AndroidEmulator");
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
@@ -84,5 +85,40 @@ public class Capabilities {
         iosDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         return iosDriver;
+    }
+
+    public static IOSDriver<IOSElement> capabilitiesIosRefactor(String appName) throws IOException, InterruptedException {
+        IOSDriver<IOSElement> iosDriver;
+        File appDir = new File("src/main/resources/iOSApp");
+        File app = new File(appDir, appName);
+        DesiredCapabilities cap = new DesiredCapabilities();
+
+        cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "iOS");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone X");
+        cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+        cap.setCapability("isHeadless",true);
+        cap.setCapability("showXcodeLog",true);
+        cap.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 500000);
+//        cap.setCapability("commandTimeouts", "12000");
+        cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
+        cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+//        cap.setCapability(MobileCapabilityType.APP, "Users/syky/Documents/TestAutomation/iOSApp/Digibank.app");
+        iosDriver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
+        iosDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        return iosDriver;
+    }
+
+    public static IOSDriver<IOSElement> capabilitiesIosTU() throws MalformedURLException {
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("platformName", "iOS");
+        capabilities.setCapability("deviceName", "iPhone X");
+        capabilities.setCapability("automationName","XCUITest");
+        capabilities.setCapability("isHeadless",true);
+        capabilities.setCapability("showXcodeLog",true);
+        capabilities.setCapability("app",
+                System.getProperty("user.dir") + "/apps/DailyCheck.zip");
+        return new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
     }
 }

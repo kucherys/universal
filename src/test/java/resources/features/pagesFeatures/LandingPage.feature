@@ -7,6 +7,8 @@ Feature: Verify landing page functionality
     Then I verify elements on landing page
       | logInButton | logoLabel  | signUpButton    |
       | Log in      | Welcome to | I'm new to Ryse |
+    And I print login button name
+    And I confirm tests completed with result IOS TEST PASSED
 
   @landAndroid
   Scenario: Verify elements on landing page for Android
@@ -16,7 +18,7 @@ Feature: Verify landing page functionality
       | logInButton | logoLabel  | signUpButton        |
       | Log In      | Welcome to | I'm new to Digibank |
     And I print login button name
-    And I confirm tests completed with result TEST PASSED
+    And I confirm tests completed with result ANDROID TEST PASSED
 
 
   @landAndroid

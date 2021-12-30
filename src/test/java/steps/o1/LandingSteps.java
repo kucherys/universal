@@ -66,7 +66,12 @@ public class LandingSteps extends BaseClass {
 
     @Then("I print login button name")
     public void printButtonName() {
-        System.out.println("BUTTON NAME IS : " + androidLaunchPage.getLogInButtonName());
+
+        if (getAppType().equals("iOS") ) {
+            System.out.println("IOS BUTTON NAME IS : " + iosLaunchPage.getLogInButtonName());
+        } else if (appType.equals("Android") ) {
+            System.out.println("ANDROID BUTTON NAME IS : " + androidLaunchPage.getLogInButtonName());
+        }
 
     }
 

@@ -3,14 +3,14 @@
     "line": 1,
     "elements": [
       {
-        "line": 12,
-        "name": "Verify elements on landing page for Android",
+        "line": 4,
+        "name": "Verify elements on landing page for iOS",
         "description": "",
-        "id": "verify-landing-page-functionality;verify-elements-on-landing-page-for-android",
+        "id": "verify-landing-page-functionality;verify-elements-on-landing-page-for-ios",
         "after": [
           {
             "result": {
-              "duration": 302783665,
+              "duration": 41885129,
               "status": "passed"
             },
             "match": {
@@ -23,15 +23,15 @@
         "steps": [
           {
             "result": {
-              "duration": 13269969446,
+              "duration": 89409475304,
               "status": "passed"
             },
-            "line": 13,
-            "name": "Appium server and simulator with application type Android started",
+            "line": 5,
+            "name": "Appium server and simulator with application type iOS started",
             "match": {
               "arguments": [
                 {
-                  "val": "Android",
+                  "val": "iOS",
                   "offset": 50
                 }
               ],
@@ -41,10 +41,10 @@
           },
           {
             "result": {
-              "duration": 548950570,
+              "duration": 181709264,
               "status": "passed"
             },
-            "line": 14,
+            "line": 6,
             "name": "I verify landing page is loaded",
             "match": {
               "location": "LandingSteps.verifyLandingPageLoaded()"
@@ -53,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 96505954,
+              "duration": 214710662,
               "status": "passed"
             },
-            "line": 15,
+            "line": 7,
             "name": "I verify elements on landing page",
             "match": {
               "location": "LandingSteps.verifyElementsLandingDataPage(DataTable)"
@@ -68,25 +68,25 @@
                   "logoLabel",
                   "signUpButton"
                 ],
-                "line": 16
+                "line": 8
               },
               {
                 "cells": [
-                  "Log In",
+                  "Log in",
                   "Welcome to",
-                  "I\u0027m new to Digibank"
+                  "I\u0027m new to Ryse"
                 ],
-                "line": 17
+                "line": 9
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 31989102,
+              "duration": 68818361,
               "status": "passed"
             },
-            "line": 18,
+            "line": 10,
             "name": "I print login button name",
             "match": {
               "location": "LandingSteps.printButtonName()"
@@ -95,15 +95,15 @@
           },
           {
             "result": {
-              "duration": 66474,
+              "duration": 110818,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I confirm tests completed with result TEST PASSED",
+            "line": 11,
+            "name": "I confirm tests completed with result IOS TEST PASSED",
             "match": {
               "arguments": [
                 {
-                  "val": "TEST PASSED",
+                  "val": "IOS TEST PASSED",
                   "offset": 38
                 }
               ],
@@ -114,8 +114,8 @@
         ],
         "tags": [
           {
-            "line": 11,
-            "name": "@landAndroid"
+            "line": 3,
+            "name": "@landIOS"
           }
         ]
       }
