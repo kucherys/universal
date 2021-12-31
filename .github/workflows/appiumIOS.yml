@@ -9,8 +9,10 @@ on:
 
 jobs:
   build:
-
-    runs-on: macos-10.15
+    runs-on: macos-latest # the machine type
+    strategy:
+      matrix:
+        destination: [ 'platform=iOS Simulator,OS=15.2,name=iPhone 12' ]
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
@@ -42,6 +44,6 @@ jobs:
       run: npm install appium
     - name: Run Appium Server
       run: ./node_modules/.bin/appium --log-timestamp --log-no-colors > appium.log &
-    - name: Build with Gradle
+    - name: Test with Gradle
       run: gradle test -DCucumber.options="-tags @landIOS" # running our test with info to check the results
-      continue-on-error: true
+      continue-on-error: false
