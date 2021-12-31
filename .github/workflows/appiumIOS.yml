@@ -20,11 +20,14 @@ jobs:
     - uses: actions/setup-node@v2
       with:
        node-version: '10.16.3'
-    - name: Install and Run Appium Server
-      run: |
+    - run: |
         chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
         ./scripts/RunAppiumServer.sh
     - name: Run Appium iOS Tests
-      #uses: reactivecircus/ios-emulator-runner@v1 # install and create the Emulator
-    - run: |
-        script: gradle test -DCucumber.options="-tags @landIOS"
+      with:
+        api-level: ${{ matrix.api-level }}
+        target: ${{ matrix.target }}
+        arch: x86_64
+        profile: Nexus 6
+        script: gradle test -DCucumber.options="-tags @landIOS" # running our test with info to check the results
+
