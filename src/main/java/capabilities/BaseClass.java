@@ -28,7 +28,7 @@ public class BaseClass extends Capabilities {
 
     @BeforeClass
     public void setupClassGlobal(String type) throws IOException, InterruptedException {
-        service = startServer();
+//        service = startServer();
         setAppType(type);
         if (getAppType().equals("iOS")) {
             iosDriver = capabilitiesIosRefactor("Digibank.app");
