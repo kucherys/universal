@@ -56,4 +56,4 @@ jobs:
 
     - name: Test iOS with Gradle
       run: gradle test -DCucumber.options="-tags @baseIOS" # running our test with info to check the results
-      continue-on-error: false
+      continue-on-error: true
