@@ -22,11 +22,13 @@ public class LandingSteps extends BaseClass {
     @Given("Appium server is running")
     public void appiumServerIsRunning() {
         service = startServer();
+        System.out.println("APPIUM SERVER started");
     }
 
     @Given("^Appium server and simulator with application type (.+) started$")
     public void appiumServerAndApplicationiOSRunning(String appType) throws IOException, InterruptedException {
         setupClassGlobal(appType);
+        System.out.println("IOS Emulator WAS started in HEADLESS mode");
     }
 
     @When("I verify landing page is loaded")
@@ -34,6 +36,7 @@ public class LandingSteps extends BaseClass {
         if (getAppType().equals("iOS") ) {
             iosLaunchPage = new IOSLaunchPage(iosDriver);
             Assert.assertTrue(iosLaunchPage.isLoaded(iosDriver));
+            System.out.println("IOS LAUNCH PAGE LOADED");
         } else if (appType.equals("Android") ) {
             androidLaunchPage = new AndroidLaunchPage(androidDriver);
             Assert.assertTrue(androidLaunchPage.isLoaded(androidDriver));

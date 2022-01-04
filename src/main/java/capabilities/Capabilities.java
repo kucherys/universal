@@ -87,7 +87,7 @@ public class Capabilities {
         return iosDriver;
     }
 
-    public static IOSDriver<IOSElement> capabilitiesIosRefactor(String appName) throws IOException, InterruptedException {
+    public static IOSDriver<IOSElement> capabilitiesIosGHA(String appName) throws IOException, InterruptedException {
         IOSDriver<IOSElement> iosDriver;
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);
@@ -104,7 +104,9 @@ public class Capabilities {
         cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 //        cap.setCapability(MobileCapabilityType.APP, "Users/syky/Documents/TestAutomation/iOSApp/Digibank.app");
+        System.out.println("IOS EMULATOR HEADLESS NOW TO BE STARTED");
         iosDriver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
+        System.out.println("IOS EMULATOR HEADLESS ALREADY SHOULD BE STARTED");
         iosDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         return iosDriver;
