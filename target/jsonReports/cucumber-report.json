@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 43234786,
+              "duration": 41888908,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 233698006339,
+              "duration": 21518216335,
               "status": "passed"
             },
             "line": 5,
@@ -41,79 +41,45 @@
           },
           {
             "result": {
-              "duration": 77130041,
-              "error_message": "org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PLPC017457\u0027, ip: \u0027fe80:0:0:0:1c5e:fc57:153d:4f24%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: io.appium.java_client.ios.IOSDriver\nCapabilities {app: /Users/syky/Documents/TestA..., automationName: XCuiTest, browserName: , databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, launchTimeout: 500000, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 14, platform: MAC, platformName: iOS, platformVersion: 15.2, takesScreenshot: true, udid: 49897500-7818-4796-A1F5-56C..., webStorageEnabled: false}\nSession ID: bba22844-df5a-41cc-a7a5-546bcb0e8a9b\n*** Element info: {Using\u003did, value\u003dbutton.logIn}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\n\tat io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)\n\tat pages.ios.o1.IOSLaunchPage.isLoaded(IOSLaunchPage.java:20)\n\tat steps.o1.LandingSteps.verifyLandingPageLoaded(LandingSteps.java:38)\n\tat ✽.When I verify landing page is loaded(pagesFeatures/LandingPage.feature:6)\n",
-              "status": "failed"
+              "duration": 102172,
+              "status": "passed"
             },
             "line": 6,
-            "name": "I verify landing page is loaded",
+            "name": "I confirm simple cucumber tests in status IN PROGRESS",
             "match": {
-              "location": "LandingSteps.verifyLandingPageLoaded()"
+              "arguments": [
+                {
+                  "val": "IN PROGRESS",
+                  "offset": 42
+                }
+              ],
+              "location": "LandingSteps.confitmSimpleTests(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 49536,
+              "status": "passed"
             },
             "line": 7,
-            "name": "I verify elements on landing page",
-            "match": {
-              "location": "LandingSteps.verifyElementsLandingDataPage(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "logInButton",
-                  "logoLabel",
-                  "signUpButton"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "Log in",
-                  "Welcome to",
-                  "I\u0027m new to Ryse"
-                ],
-                "line": 9
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "I print login button name",
-            "match": {
-              "location": "LandingSteps.printButtonName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "I confirm tests completed with result IOS TEST PASSED",
+            "name": "I confirm simple cucumber tests in status COMPLETED",
             "match": {
               "arguments": [
                 {
-                  "val": "IOS TEST PASSED",
-                  "offset": 38
+                  "val": "COMPLETED",
+                  "offset": 42
                 }
               ],
-              "location": "LandingSteps.confitmTests(String)"
+              "location": "LandingSteps.confitmSimpleTests(String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@landIOS"
+            "name": "@baseIOS"
           }
         ]
       }

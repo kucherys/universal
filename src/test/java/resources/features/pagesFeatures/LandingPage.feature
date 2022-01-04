@@ -1,5 +1,11 @@
 Feature: Verify landing page functionality
 
+  @baseIOS
+  Scenario: Verify elements on landing page for iOS
+    Given Appium server and simulator with application type iOS started
+    When I confirm simple cucumber tests in status IN PROGRESS
+    Then I confirm simple cucumber tests in status COMPLETED
+
   @landIOS
   Scenario: Verify elements on landing page for iOS
     Given Appium server and simulator with application type iOS started

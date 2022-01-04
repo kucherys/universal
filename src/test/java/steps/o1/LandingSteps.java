@@ -67,6 +67,12 @@ public class LandingSteps extends BaseClass {
 
     }
 
+    @Then("^I confirm simple cucumber tests in status (.+)$")
+    public void confitmSimpleTests(String result) {
+        System.out.println("CUCUMBER TESTS PASSED WITH RESULT: " + result);
+
+    }
+
     @Then("I print login button name")
     public void printButtonName() {
 
