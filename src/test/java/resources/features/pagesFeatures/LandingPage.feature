@@ -1,7 +1,7 @@
 Feature: Verify landing page functionality
 
   @baseIOS
-  Scenario: Verify elements on landing page for iOS
+  Scenario: Verify basic test without checking UI iOS
     Given Appium server and simulator with application type iOS started
     When I confirm simple cucumber tests in status IN PROGRESS
     Then I confirm simple cucumber tests in status COMPLETED
