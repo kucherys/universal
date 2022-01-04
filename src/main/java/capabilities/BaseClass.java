@@ -27,7 +27,8 @@ public class BaseClass extends Capabilities {
 
     @BeforeClass
     public void setupClassGlobal(String type) throws IOException, InterruptedException {
-//        service = startServer();
+        service = startServer();
+        System.out.println("BEFORE CLASS APPIUM SERVER START");
         setAppType(type);
         if (getAppType().equals("iOS")) {
             iosDriver = capabilitiesIosGHA("Digibank.app");
