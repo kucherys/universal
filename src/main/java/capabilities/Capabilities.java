@@ -88,6 +88,7 @@ public class Capabilities {
     }
 
     public static IOSDriver<IOSElement> capabilitiesIosGHA(String appName) throws IOException, InterruptedException {
+        System.out.println("START CAPABILITIES");
         IOSDriver<IOSElement> iosDriver;
         File appDir = new File("src/main/resources/iOSApp");
         File app = new File(appDir, appName);
